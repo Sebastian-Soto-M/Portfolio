@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{{ dir_title or 'Home' }} SNSM</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="{{ url_for('.static',filename='css/bootstrap.min.css') }}">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="{{ url_for('.static',filename='css/mdb.min.css') }}">
+
+  {% block styles %}
+
+  {% endblock styles %}
+</head>
+
+<body class="{{colors['neutral']}}">
+
+  <header>
+    {% block header %}
+    {% include 'views/base/nav.html' %}
+    {% endblock header %}
+  </header>
+
+  <main>
+    {% block content %}
+    {% endblock content %}
+  </main>
+
+  <footer>
+    {% include 'views/base/footer.html' %}
+  </footer>
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script src="{{ url_for('.static',filename='js/jquery-3.4.1.min.js') }}"></script>
+  <!-- Bootstrap tooltips -->
+  <script src="{{ url_for('.static',filename='js/popper.min.js') }}"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('.static',filename='js/bootstrap.min.js') }}"></script>
+  <!-- MDB core JavaScript -->
+  <script src="{{ url_for('.static',filename='js/mdb.min.js') }}"></script>
+  {% block scripts %}
+  {% endblock scripts %}
+</body>
+
+</html>

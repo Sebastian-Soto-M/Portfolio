@@ -1,0 +1,9 @@
+{
+    "accent":   "deep-orange lighten-1",
+    "neutral":  "grey lighten-4",
+    "contrast": "pink lighten-1",
+    "dark-1":   "unique-color-dark",
+    "dark-2":   "mdb-color darken-2",
+    "light-1":  "blue",
+    "light-2":  "light-blue lighten-1"
+}
