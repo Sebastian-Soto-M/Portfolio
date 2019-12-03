@@ -3,95 +3,151 @@
 {% block styles %}
 <link rel="stylesheet" href="{{ url_for('.static',filename='css/index.min.css') }}">
 {% endblock styles %}
+
 {% block header %}
-<!-- Main navigation -->
-<!--Navbar -->
-<nav class="navbar navbar-expand-lg scrolling-navbar navbar-dark z-depth-0 fixed-top">
-    <a class="navbar-brand" href="#">
-        <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" alt="mdb logo">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
-        aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fab fa-pinterest-p"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fab fa-dribbble"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-user"></i>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-                    <a class="dropdown-item" href="#">My account</a>
-                    <a class="dropdown-item" href="#">Log out</a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</nav>
-<!--/.Navbar -->
-
-<!-- Intro -->
-<section class="view">
-
-    <div class="row">
-
-        <div class="col-md-6">
-
-            <div class="d-flex flex-column justify-content-center align-items-center h-100">
-                <h1 class="heading text-primary">Material Design for Bootstrap</h1>
-                <h4 class="subheading font-weight-bold">World's most popular framework for building responsive,
-                    mobile-first websites and apps</h4>
-                <div class="mr-auto">
-                    <button type="button" class="btn btn-lily btn-margin btn-rounded">Get started <i
-                            class="fas fa-caret-right ml-3"></i></button>
+<div class="view jarallax" data-jarallax='{"speed": 0.2}'
+    style="background-image: url('https://images.unsplash.com/photo-1479981280584-037818c1297d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <div class="mask rgba-blue-light d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 white-text text-center">
+                    <h1 class="display-3 mb-0 pt-md-5 pt-5 white-text font-weight-bold wow fadeInDown"
+                        data-wow-delay="0.3s">Sebastian
+                        <a class="indigo-text font-weight-bold">Soto</a>
+                    </h1>
+                    <h5 class="text-uppercase pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 white-text font-weight-bold wow fadeInDown"
+                        data-wow-delay="0.3s">Software developer</h5>
+                    <div class="wow fadeInDown" data-wow-delay="0.3s">
+                        <a class="btn btn-outline-indigo btn-lg btn-rounded">portfolio</a>
+                        <a class="btn btn-indigo btn-lg btn-rounded">resume</a>
+                    </div>
                 </div>
             </div>
-
         </div>
-
-        <div class="col-md-6">
-
-            <div class="view">
-                <img src="https://images.pexels.com/photos/325045/pexels-photo-325045.jpeg" class="img-fluid"
-                    alt="smaple image">
-                <div class="mask flex-center hm-gradient">
-                </div>
-            </div>
-
-        </div>
-
     </div>
-
-</section>
-<!-- Intro -->
-
-</header>
-<!-- Main navigation -->
+</div>
 {% endblock header %}
 
 {% block content %}
+<!-- about -->
+<div class="container my-5">
+    <!--Section: Content-->
+    <section class="dark-grey-text">
+        <div class="row pr-lg-5">
+            <div class="col-md-7 mb-4">
+                <div class="view">
+                    <img src="https://mdbootstrap.com/img/illustrations/graphics(4).png" class="img-fluid"
+                        alt="smaple image">
+                </div>
+            </div>
+            <div class="col-md-5 d-flex align-items-center">
+                <div>
+                    <h3 class="font-weight-bold mb-4">About Me</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adip elit. Maiores deleniti explicabo voluptatem quisquam
+                        nulla asperiores aspernatur aperiam voluptate et consectetur minima delectus, fugiat eum soluta
+                        blanditiis adipisci, velit dolore magnam.
+                    </p>
+                    <button type="button" class="btn btn-indigo btn-rounded mx-0">Read more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Section: Content-->
+</div>
+
+<!-- projects -->
+<div class="bg-white mb-5 py-2 z-depth-1">
+    <div class="container my-5">
+        <section class="dark-grey-text text-center">
+            <h3 class="font-weight-bold mb-4 pb-2">Some of my projects</h3>
+            <p class="text-muted w-responsive mx-auto mb-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
+                error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum
+                porro
+                a pariatur veniam.
+            </p>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="overlay rounded z-depth-1">
+                        <img src="https://mdbootstrap.com/img/Photos/Others/images/58.jpg" class="img-fluid"
+                            alt="Sample project image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <div class="px-3 pt-3 mx-1 mt-1 pb-0">
+                        <h4 class="font-weight-bold mt-1 mb-3">Title of the news</h4>
+                        <p class="text-muted">Temporibus autem quibusdam et aut officiis debitis aut rerum
+                            necessitatibus
+                            saepe eveniet ut et voluptates repudiandae.</p>
+                        <a class="btn btn-indigo btn-sm btn-rounded"><i class="fas fa-clone left"></i> View project</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="overlay rounded z-depth-1">
+                        <img src="https://mdbootstrap.com/img/Photos/Others/project4.jpg" class="img-fluid"
+                            alt="Sample project image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <div class="px-3 pt-3 mx-1 mt-1 pb-0">
+                        <h4 class="font-weight-bold mt-1 mb-3">Title of the news</h4>
+                        <p class="text-muted">Temporibus autem quibusdam et aut officiis debitis aut rerum
+                            necessitatibus
+                            saepe eveniet ut et voluptates repudiandae.</p>
+                        <a class="btn btn-indigo btn-sm btn-rounded"><i class="fas fa-clone left"></i> View project</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="overlay rounded z-depth-1">
+                        <img src="https://mdbootstrap.com/img/Photos/Others/images/88.jpg" class="img-fluid"
+                            alt="Sample project image">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <div class="px-3 pt-3 mx-1 mt-1 pb-0">
+                        <h4 class="font-weight-bold mt-1 mb-3">Title of the news</h4>
+                        <p class="text-muted">Temporibus autem quibusdam et aut officiis debitis aut rerum
+                            necessitatibus
+                            saepe eveniet ut et voluptates repudiandae.</p>
+                        <a class="btn btn-indigo btn-sm btn-rounded"><i class="fas fa-clone left"></i> View project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- technologies -->
+<section class="carousel slide" data-ride="carousel" id="postsCarousel">
+    <!-- buttons -->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-12 text-md-right lead">
+                <a class="btn btn-outline-secondary prev" href="" title="go back"><i
+                        class="fa fa-lg fa-chevron-left"></i></a>
+                <a class="btn btn-outline-secondary next" href="" title="more"><i
+                        class="fa fa-lg fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </div> -->
+    <div class="container">
+        <!--carousel-inner carousel-item > card-deck > cards -->
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <!-- active -->
+                <div class="card-deck">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 {% endblock content %}
 {% block scripts %}
-<!-- <script src="{{ url_for('static', filename='js/custom/views/index.js') }}"></script> -->
+<script src="{{ url_for('static', filename='js/custom/views/index.js') }}"></script>
 {% endblock scripts %}
