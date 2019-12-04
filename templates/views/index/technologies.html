@@ -1,20 +1,46 @@
-<section id="technologies" class="container-fluid">
-    <div class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            {% for tech_row in technologies | batch(3)%}
-            <div class="carousel-item justify-content-center {{ 'active' if loop.index == 1 }}">
-                <div class="card-deck w-100">
-                    {% for tech in tech_row %}
-                    {% call card.minimal(size='col-sm') %}
-                    <i class="{{ tech.icon}} fa-2x {{ tech.color }}-ic mb-3"></i>
-                    <div class="text-xl font-weight-bold text-{{ tech.color }} text-uppercase mb-1">
-                        {{tech.name}}
+<section id="technologies" class="indigo">
+    <div class="container-fluid pt-5">
+        <div class="text-center white-text">
+            <h3 class="font-weight-bold mb-4 pb-2">Technologies I've Used</h3>
+            <p class="w-responsive mx-auto mb-5">
+                This is a list of the technologies I have employed to create my ptojects. For example, I made this web
+                site
+                with Python, Flask, Html, Css, Scss, Bootstrap 4, Git and Heroku for deployment.
+            </p>
+        </div>
+        <div id="carouselTechnologies" class="carousel slide" data-ride="carousel">
+            <div>
+                <a class="carousel-control-prev" href="#carouselTechnologies" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselTechnologies" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <div class="w-75 m-auto carousel-inner">
+                    {% for tech_row in technologies | batch(3)%}
+                    <div class="carousel-item justify-content-center {{ 'active' if loop.index == 1 }}">
+                        <div class="card-deck w-100">
+                            {% for tech in tech_row %}
+                            {% call card.minimal(size='col-sm') %}
+                            <i class="{{ tech.icon}} fa-2x {{ tech.color }}-ic mb-3"></i>
+                            <div class="text-xl font-weight-bold text-{{ tech.color }} text-uppercase mb-1">
+                                {{tech.name}}
+                            </div>
+                            {% endcall %}
+                            {% endfor %}
+                        </div>
                     </div>
-                    {% endcall %}
                     {% endfor %}
                 </div>
             </div>
-            {% endfor %}
+            <ol class="carousel-indicators pb-2 mb-0" style="position: relative;">
+                {% for tech_row in technologies | batch(3)%}
+                <li data-target="#carouselTechnologies" data-slide-to="{{ loop.index-1 }}"
+                    class="{{ 'active' if loop.index == 1 }}"></li>
+                {% endfor %}
+            </ol>
         </div>
     </div>
 </section>

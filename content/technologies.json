@@ -1,16 +1,5 @@
 [
     {
-        "id": "0",
-        "name": "Python",
-        "experience": 3,
-        "icon": "fab fa-python",
-        "color": "warning",
-        "projects": [
-            "This site was created using python"
-        ]
-    },
-    {
-        "id": "1",
         "name": "Java",
         "experience": 4,
         "icon": "fab fa-java",
@@ -22,7 +11,13 @@
         ]
     },
     {
-        "id": "2",
+        "name": "JavaFX",
+        "experience": 4,
+        "icon": "fab fa-java",
+        "color": "danger",
+        "projects": []
+    },
+    {
         "name": "Android",
         "experience": 3,
         "icon": "fab fa-android",
@@ -34,7 +29,24 @@
         ]
     },
     {
-        "id": "3",
+        "name": "Python",
+        "experience": 3,
+        "icon": "fab fa-python",
+        "color": "warning",
+        "projects": [
+            "This site was created using python"
+        ]
+    },
+    {
+        "name": "Flask",
+        "experience": 4,
+        "icon": "fas fa-flask",
+        "color": "info",
+        "projects": [
+            "This website"
+        ]
+    },
+    {
         "name": "Html",
         "experience": 5,
         "icon": "fab fa-html5",
@@ -49,7 +61,6 @@
         ]
     },
     {
-        "id": "4",
         "name": "Css",
         "experience": 4,
         "icon": "fab fa-css3-alt",
@@ -64,11 +75,10 @@
         ]
     },
     {
-        "id": "5",
         "name": "Sass",
         "experience": 4,
         "icon": "fab fa-sass",
-        "color": "primary",
+        "color": "secondary",
         "projects": [
             "Multiple university courses",
             "This website",
@@ -79,17 +89,6 @@
         ]
     },
     {
-        "id": "6",
-        "name": "Flask",
-        "experience": 4,
-        "icon": "fas fa-flask",
-        "color": "info",
-        "projects": [
-            "This website"
-        ]
-    },
-    {
-        "id": "7",
         "name": "Bootstrap",
         "experience": 4,
         "icon": "fab fa-bootstrap",
@@ -102,7 +101,6 @@
         ]
     },
     {
-        "id": "8",
         "name": "JavaScript",
         "experience": 4,
         "icon": "fab fa-js",
@@ -117,7 +115,6 @@
         ]
     },
     {
-        "id": "9",
         "name": "Node.js",
         "experience": 3,
         "icon": "fab fa-node",
@@ -127,7 +124,6 @@
         ]
     },
     {
-        "id": "10",
         "name": "Firebase",
         "experience": 3,
         "icon": "fas fa-database",
@@ -137,7 +133,6 @@
         ]
     },
     {
-        "id": "11",
         "name": "Transact-SQL",
         "experience": 4,
         "icon": "fas fa-database",
@@ -148,9 +143,8 @@
         ]
     },
     {
-        "id": "12",
         "name": "Pl/SQL",
-        "experience": 4,
+        "experience": 3,
         "icon": "fas fa-database",
         "color": "warning",
         "projects": [
@@ -158,7 +152,6 @@
         ]
     },
     {
-        "id": "13",
         "name": "C++",
         "experience": 3,
         "icon": "fas fa-laptop-code",
@@ -166,12 +159,52 @@
         "projects": []
     },
     {
-        "id": "14",
         "name": "C#",
         "experience": 4,
         "icon": "fas fa-laptop-code",
         "color": "secondary",
         "projects": []
+    },
+    {
+        "name": ".NET",
+        "experience": 4,
+        "icon": "fab fa-microsoft",
+        "color": "primary",
+        "projects": []
+    },
+    {
+        "name": "Razor",
+        "experience": 4,
+        "icon": "fab fa-microsoft",
+        "color": "secondary",
+        "projects": []
+    },
+    {
+        "name": "Azure DevOps",
+        "experience": 4,
+        "icon": "fab fa-microsoft",
+        "color": "primary",
+        "projects": []
+    },
+    {
+        "name": "Markdown",
+        "experience": 4,
+        "icon": "fab fa-markdown",
+        "color": "dark",
+        "projects": []
+    },
+    {
+        "name": "Git",
+        "experience": 5,
+        "icon": "fab fa-git-alt",
+        "color": "danger",
+        "projects": []
+    },
+    {
+        "name": "Heroku",
+        "experience": 3,
+        "icon": "fas fa-server",
+        "color": "secondary",
+        "projects": []
     }
-
 ]

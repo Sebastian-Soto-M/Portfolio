@@ -33,7 +33,7 @@ def inject_personal_info():
 @app.route('/')
 def index():
     techs_json = utils.readJson(os.path.join('content', 'technologies.json'))
-    return render_template('views/index/index.html', technologies=sorted(techs_json, key=itemgetter('name'),reverse=False))
+    return render_template('views/index/index.html', technologies=techs_json)
 
 
 @app.errorhandler(404)
