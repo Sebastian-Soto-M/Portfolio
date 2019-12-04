@@ -1,6 +1,8 @@
 import os
 import utils
 import jinja2
+import pandas as pd
+from operator import itemgetter
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -20,14 +22,18 @@ def inject_dict_for_all_templates():
 def inject_color_palette():
     return dict(colors=utils.readJson(os.path.join('content',
                                                    'colors.json')))
+
+
 @app.context_processor
 def inject_personal_info():
     return dict(info=utils.readJson(os.path.join('content',
-                                                   'info.json')))
+                                                 'info.json')))
+
 
 @app.route('/')
 def index():
-    return render_template('views/index/index.html')
+    techs_json = utils.readJson(os.path.join('content', 'technologies.json'))
+    return render_template('views/index/index.html', technologies=sorted(techs_json, key=itemgetter('name'),reverse=False))
 
 
 @app.errorhandler(404)

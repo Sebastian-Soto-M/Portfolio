@@ -1,0 +1,35 @@
+<section id="technologies" class="container-fluid">
+    <div class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            {% for tech_row in technologies | batch(4)%}
+            <div class="carousel-item {{ 'active' if loop.index == 1 }}">
+                <div class="card-deck w-100">
+                    {% for tech in tech_row %}
+                    <!-- creates card -->
+
+                    {% if tech.icon | length %}
+                    {% call card.minimal(size='col') %}
+                    <i class="{{ tech.icon}} fa-2x {{ tech.color }}-ic mb-3"></i>
+                    <div class="text-xl font-weight-bold text-{{ tech.color }} text-uppercase mb-1">
+                        {{tech.name}}
+                    </div>
+                    {% endcall %}
+                    {% else %}
+                    {% call card.minimal(size='col', classes='flex-center h2') %}
+                    <div class="">
+                        <div class="text-xl font-weight-bold text-{{ tech.color }} text-uppercase mb-1">
+                            {{tech.name}}
+                        </div>
+                    </div>
+                    {% endcall %}
+                    {% endif %}
+
+
+                    <!-- creates card -->
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

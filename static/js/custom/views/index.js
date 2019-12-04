@@ -1,4 +1,5 @@
 "use strict";
+$('.carousel').carousel('pause');
 (function ($) {
     // manual carousel controls
     $('.next').click(function () {
@@ -9,5 +10,4 @@
         $('.carousel').carousel('prev');
         return false;
     });
-
 })(jQuery);

@@ -1,0 +1,177 @@
+[
+    {
+        "id": "0",
+        "name": "Python",
+        "experience": 3,
+        "icon": "fab fa-python",
+        "color": "warning",
+        "projects": [
+            "This site was created using python"
+        ]
+    },
+    {
+        "id": "1",
+        "name": "Java",
+        "experience": 4,
+        "icon": "fab fa-java",
+        "color": "danger",
+        "projects": [
+            "A timer app (clone of toggle)",
+            "Mine-sweeper console game",
+            "A board game center with chess and checkers"
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Android",
+        "experience": 3,
+        "icon": "fab fa-android",
+        "color": "success",
+        "projects": [
+            "Weather app",
+            "Game to test reflexes",
+            "Simple math game for babies"
+        ]
+    },
+    {
+        "id": "3",
+        "name": "Html",
+        "experience": 5,
+        "icon": "fab fa-html5",
+        "color": "danger",
+        "projects": [
+            "Multiple university courses",
+            "This website",
+            "An administration tool for the university's teachers, students, courses and more (Proyecto #1, Cenfotec)",
+            "A local website for psicology students",
+            "Simple games using p5.js",
+            "Administration tool for a hotel platform (Proyecto #2, Cenfotec)"
+        ]
+    },
+    {
+        "id": "4",
+        "name": "Css",
+        "experience": 4,
+        "icon": "fab fa-css3-alt",
+        "color": "info",
+        "projects": [
+            "Multiple university courses",
+            "This website",
+            "An administration tool for the university's teachers, students, courses and more (Proyecto #1, Cenfotec)",
+            "A local website for psicology students",
+            "Simple games using p5.js",
+            "Administration tool for a hotel platform (Proyecto #2, Cenfotec)"
+        ]
+    },
+    {
+        "id": "5",
+        "name": "Sass",
+        "experience": 4,
+        "icon": "fab fa-sass",
+        "color": "primary",
+        "projects": [
+            "Multiple university courses",
+            "This website",
+            "An administration tool for the university's teachers, students, courses and more (Proyecto #1, Cenfotec)",
+            "A local website for psicology students",
+            "Simple games using p5.js",
+            "Administration tool for a hotel platform (Proyecto #2, Cenfotec)"
+        ]
+    },
+    {
+        "id": "6",
+        "name": "Flask",
+        "experience": 4,
+        "icon": "fas fa-flask",
+        "color": "info",
+        "projects": [
+            "This website"
+        ]
+    },
+    {
+        "id": "7",
+        "name": "Bootstrap",
+        "experience": 4,
+        "icon": "fab fa-bootstrap",
+        "color": "primary",
+        "projects": [
+            "Multiple university courses",
+            "This website",
+            "A local website for psicology students",
+            "Administration tool for a hotel platform (Proyecto #2, Cenfotec)"
+        ]
+    },
+    {
+        "id": "8",
+        "name": "JavaScript",
+        "experience": 4,
+        "icon": "fab fa-js",
+        "color": "warning",
+        "projects": [
+            "Multiple university courses",
+            "This website",
+            "An administration tool for the university's teachers, students, courses and more (Proyecto #1, Cenfotec)",
+            "A local website for psicology students",
+            "Simple games using p5.js",
+            "Administration tool for a hotel platform (Proyecto #2, Cenfotec)"
+        ]
+    },
+    {
+        "id": "9",
+        "name": "Node.js",
+        "experience": 3,
+        "icon": "fab fa-node",
+        "color": "success",
+        "projects": [
+            "An administration tool for the university's teachers, students, courses and more (Proyecto #1, Cenfotec)"
+        ]
+    },
+    {
+        "id": "10",
+        "name": "Firebase",
+        "experience": 3,
+        "icon": "fas fa-database",
+        "color": "warning",
+        "projects": [
+            "Simple android apps"
+        ]
+    },
+    {
+        "id": "11",
+        "name": "Transact-SQL",
+        "experience": 4,
+        "icon": "fas fa-database",
+        "color": "warning",
+        "projects": [
+            "Administration tool for a hotel platform (Proyecto #2, Cenfotec)",
+            "A timer app (clone of toggle)"
+        ]
+    },
+    {
+        "id": "12",
+        "name": "Pl/SQL",
+        "experience": 4,
+        "icon": "fas fa-database",
+        "color": "warning",
+        "projects": [
+            "Game replica of \"Apalabrados\""
+        ]
+    },
+    {
+        "id": "13",
+        "name": "C++",
+        "experience": 3,
+        "icon": "fas fa-laptop-code",
+        "color": "primary",
+        "projects": []
+    },
+    {
+        "id": "14",
+        "name": "C#",
+        "experience": 4,
+        "icon": "fas fa-laptop-code",
+        "color": "secondary",
+        "projects": []
+    }
+
+]
