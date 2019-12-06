@@ -1,7 +1,6 @@
 import os
 import utils
 import jinja2
-import pandas as pd
 from operator import itemgetter
 from flask import Flask, render_template
 
