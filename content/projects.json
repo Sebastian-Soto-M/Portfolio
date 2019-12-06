@@ -1,0 +1,23 @@
+[
+    {
+        "id": "compmatrix",
+        "title": "Curd Maker",
+        "href": "/crud-maker",
+        "description":"A tool I created to reduce coding time on a project.",
+        "img": "matrix.jpg"
+    },
+    {
+        "id": "autofm",
+        "title": "Auto FM",
+        "href": "/automatic-file-manager",
+        "description":"This is a console app that created to organize files.",
+        "img": "archive_1.jpg"
+    },
+    {
+        "id": "bbmath",
+        "title": "Baby Math",
+        "href": "/baby-math",
+        "description":"Android game for kids, created to help them study math in a fun way.",
+        "img": "numbers.jpg"
+    }
+]
