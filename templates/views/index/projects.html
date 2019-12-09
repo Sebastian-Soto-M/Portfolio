@@ -8,7 +8,8 @@
                 </p>
                 <a class="btn btn-indigo btn-lg btn-rounded waves-effect waves-light mb-5" href="/projects">See more!</a>
                 <div class="row">
-                    {% for proj in projects %}
+                    {% for key, value in projects.items() %}
+                    {% for proj in value %}
                     <div class="col-lg-4 col-md-12 mb-5">
                             <div class="overlay rounded z-depth-1">
                                 <img src="{{ url_for('static', filename='img/projects/') }}{{ proj.img }}" class="img-fluid z-depth-1-half"
@@ -17,13 +18,14 @@
                                     <div class="mask rgba-white-slight"></div>
                                 </a>
                             </div>
-        
+
                             <div class="px-3 pt-3 mx-1 mt-1 pb-0">
                                 <h4 class="font-weight-bold mt-1 mb-3">{{ proj.title }}</h4>
                                 <p class="text-muted">{{ proj.description }}</p>
                                 <a class="btn btn-indigo btn-sm btn-rounded" href="{{ proj.href }}"><i class="fas fa-clone left"></i> View project</a>
                             </div>
                         </div>
+                    {% endfor %}
                     {% endfor %}
                 </div>
             </section>
