@@ -43,9 +43,14 @@ def inject_personal_info():
 @app.route('/')
 def index():
     techs_json = utils.readJson(os.path.join('content', 'technologies.json'))
-    projects_json = utils.readJson(
-        os.path.join('content', 'projects.json'))[:3]
-    return render_template('views/index/index.html', technologies=techs_json, projects=projects_json)
+    projects_info = utils.readJson(os.path.join('content', 'projects.json'))
+    projects_json = []
+    projects_json.append(projects_info['java'][0])
+    projects_json.append(projects_info['java'][1])
+    projects_json.append(projects_info['python'][0])
+    return render_template('views/index/index.html',
+                           technologies=techs_json,
+                           projects=projects_info)
 
 
 @app.route('/download/resume')
@@ -57,7 +62,8 @@ def download_resume():
 def projects():
     projects_json = utils.readJson(
         os.path.join('content', 'projects.json'))
-    return render_template('views/projects/projects.html', projects=projects_json)
+    return render_template('views/projects/projects.html',
+                           projects=projects_json)
 
 
 @app.errorhandler(404)
