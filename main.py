@@ -13,8 +13,19 @@ environment = jinja2.Environment(loader=loader)
 
 @app.context_processor
 def inject_dict_for_all_templates():
-    return dict(nav_bar=utils.readJson(os.path.join('content',
-                                                    'nav.json')))
+    nav_info = utils.readJson(os.path.join('content', 'nav.json'))
+    projects_info = utils.readJson(os.path.join('content', 'projects.json'))
+
+    final = []
+    for item in projects_info:
+        final.append({
+            "header": item,
+            "routes": projects_info[item]
+        })
+
+    next(item for item in nav_info if item['id'] == 'projects')[
+        'sub_links'] = final
+    return dict(nav_bar=nav_info)
 
 
 @app.context_processor
@@ -40,6 +51,13 @@ def index():
 @app.route('/download/resume')
 def download_resume():
     return send_file(os.path.join('content', 'SebastianSoto_cv.pdf'))
+
+
+@app.route('/projects')
+def projects():
+    projects_json = utils.readJson(
+        os.path.join('content', 'projects.json'))
+    return render_template('views/projects/projects.html', projects=projects_json)
 
 
 @app.errorhandler(404)

@@ -1,0 +1,18 @@
+{% extends 'views/base/base.html' %}
+{% import 'components/card.html' as card %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('.static',filename='css/projects.min.css') }}">
+{% endblock styles %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+    
+{% endblock content %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/custom/views/projects.js') }}"></script>
+{% endblock scripts %}

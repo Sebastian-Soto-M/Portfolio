@@ -25,34 +25,7 @@
         "title": "Projects",
         "href": "",
         "icon": "fas fa-folder-open",
-        "sub_links": [
-            {
-                "header": "Python",
-                "routes": [
-                    {
-                        "href": "/climate_reporter",
-                        "title": "Climate Reporter"
-                    },
-                    {
-                        "href": "/toggle_clone",
-                        "title": "Toggl Clone"
-                    }
-                ]
-            },
-            {
-                "header": "Java",
-                "routes": [
-                    {
-                        "href": "/climate_reporter",
-                        "title": "Weather Reporter"
-                    },
-                    {
-                        "href": "/toggle_clone",
-                        "title": "Toggl Doppleganger"
-                    }
-                ]
-            }
-        ]
+        "sub_links": []
     },
     {
         "id": "blog",

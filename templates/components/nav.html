@@ -20,7 +20,7 @@
   </a>
   <div class="dropdown-menu dropdown-primary" aria-labelledby="dd_{{ id }}">
     {% for link in links %}
-    <h6 class="dropdown-header">{{ link.header }}:</h6>
+    <h6 class="dropdown-header text-capitalize">{{ link.header }}:</h6>
       {% for route in link.routes %}
       <a class="dropdown-item" href="{{ route.href }}">
           {{ route.title }}

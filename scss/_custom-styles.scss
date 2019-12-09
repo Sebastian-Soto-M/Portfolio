@@ -1,4 +1,24 @@
 // Your custom styles
-.carousel-control-next, .carousel-control-prev {
-    opacity: .8;
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 0.8;
+}
+
+.top-nav-collapse {
+  background-color: $white !important;
+  @extend .z-depth-1;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background-color: $white !important;
+    .nav-item > a,
+    a.navbar-brand {
+      color: inherit !important;
+    }
+  }
+}
+
+h5 {
+  letter-spacing: 3px;
 }
