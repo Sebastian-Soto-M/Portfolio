@@ -2,7 +2,7 @@ import os
 import utils
 import jinja2
 from operator import itemgetter
-from flask import Flask, render_template
+from flask import Flask, render_template, send_file
 
 app = Flask(__name__)
 
@@ -32,8 +32,14 @@ def inject_personal_info():
 @app.route('/')
 def index():
     techs_json = utils.readJson(os.path.join('content', 'technologies.json'))
-    projects_json = utils.readJson(os.path.join('content', 'projects.json'))[:3]
+    projects_json = utils.readJson(
+        os.path.join('content', 'projects.json'))[:3]
     return render_template('views/index/index.html', technologies=techs_json, projects=projects_json)
+
+
+@app.route('/download/resume')
+def download_resume():
+    return send_file(os.path.join('content', 'SebastianSoto_cv.pdf'))
 
 
 @app.errorhandler(404)

@@ -89,7 +89,7 @@
         ]
     },
     {
-        "name": "Bootstrap",
+        "name": "Bootstrap 4",
         "experience": 4,
         "icon": "fab fa-bootstrap",
         "color": "primary",
