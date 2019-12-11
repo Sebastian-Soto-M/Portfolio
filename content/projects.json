@@ -4,7 +4,7 @@
             "id": "compmatrix",
             "title": "Curd Maker",
             "href": "/crud-maker",
-            "description": "A tool to reduce coding time on a project.",
+            "description": "A tool to reduce coding time on a .Net back-end project.",
             "img": "matrix.jpg",
             "techs": []
         },
@@ -22,7 +22,7 @@
             "id": "autofm",
             "title": "Auto FM",
             "href": "/automatic-file-manager",
-            "description": "This is a console app to organize files.",
+            "description": "This is a console app to organize files, sorting them by type and extension.",
             "img": "archive_1.jpg",
             "techs":[]
         },

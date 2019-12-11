@@ -17,11 +17,33 @@
 </div>
 {%- endmacro %}
 
-{% macro narrow_project (classes='',size='col-sm-4',id='',cursor='default') -%}
-<div id="{{ id }}" class="mb-4 {{ size }} {{ classes }}">
-    <div class="card h-100 py-2 z-depth-1-half" style="cursor:{{cursor}}">
-        <div class="card-body align-items-center text-center">
-            {{ caller() }}
+{% macro narrow_project(id,img,title,labels=[],size='col-sm-4') -%}
+<div id="{{ id }}" class="{{ size }}">
+    <div class="card card-cascade narrower">
+        <!-- Card image -->
+        <div class="view view-cascade overlay">
+            <img class="card-img-top" src="{{ url_for('static', filename='img/projects/') }}{{ img }}"
+                alt="Project Image">
+            <a>
+                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+            </a>
+        </div>
+        <!-- Card content -->
+        <div class="card-body card-body-cascade">
+            <!-- Title -->
+            <h4 class="font-weight-bold card-title">{{ title }}</h4>
+            <!-- Text -->
+            <p class="card-text">
+                {{ description }}
+            </p>
+            <!-- Languages -->
+            <div class="container mb-3">
+                <div class="row mt-2">
+                    {% for label in labels %}
+                        <span class="mr-2 mb-2 badge badge-{{ label.color }}">{{ label.text }}</span>    
+                    {% endfor %}
+                </div>
+            </div>
         </div>
     </div>
 </div>

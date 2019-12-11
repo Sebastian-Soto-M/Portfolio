@@ -1,163 +1,140 @@
-[
-    {
-        "id":"java",
+{
+    "java": {
         "name": "Java",
         "experience": 4,
         "icon": "fab fa-java",
         "color": "danger"
     },
-    {
-        "id":"javafx",
+    "javafx": {
         "name": "JavaFX",
         "experience": 4,
         "icon": "fab fa-java",
         "color": "danger"
     },
-    {
-        "id":"android",
+    "android": {
         "name": "Android",
         "experience": 3,
         "icon": "fab fa-android",
         "color": "success"
     },
-    {
-        "id":"python",
+    "python": {
         "name": "Python",
         "experience": 3,
         "icon": "fab fa-python",
         "color": "warning"
-    },java
-    {
-        "id":"flask",
+    },
+    "flask": {
         "name": "Flask",
         "experience": 4,
         "icon": "fas fa-flask",
         "color": "info"
     },
-    {
-        "id":"html",
+    "html": {
         "name": "Html",
         "experience": 5,
         "icon": "fab fa-html5",
         "color": "danger"
     },
-    {
-        "id":"css",
+    "css": {
         "name": "Css",
         "experience": 4,
         "icon": "fab fa-css3-alt",
         "color": "info"
     },
-    {
-        "id":"sass",
+    "sass": {
         "name": "Sass",
         "experience": 4,
         "icon": "fab fa-sass",
         "color": "secondary"
     },
-    {
-        "id":"bootstrap",
+    "bootstrap": {
         "name": "Bootstrap 4",
         "experience": 4,
         "icon": "fab fa-bootstrap",
         "color": "primary"
     },
-    {
-        "id":"js",
+    "js": {
         "name": "JavaScript",
         "experience": 4,
         "icon": "fab fa-js",
         "color": "warning"
     },
-    {
-        "id":"jquery",
+    "jquery": {
         "name": "jQuery",
         "experience": 4,
         "icon": "fas fa-globe",
         "color": "primary"
     },
-    {
-        "id":"node",
+    "node": {
         "name": "Node.js",
         "experience": 3,
         "icon": "fab fa-node",
         "color": "success"
     },
-    {
-        "id":"tsql",
+    "tsql": {
         "name": "Transact-SQL",
         "experience": 4,
         "icon": "fas fa-database",
         "color": "warning"
     },
-    {
-        "id":"firebase",
+    "firebase": {
         "name": "Firebase",
         "experience": 3,
         "icon": "fas fa-database",
         "color": "warning"
     },
-    {
-        "id":"plsql",
+    "plsql": {
         "name": "Pl/SQL",
         "experience": 3,
         "icon": "fas fa-database",
         "color": "warning"
     },
-    {
-        "id":"cpp",
+    "cpp": {
         "name": "C++",
         "experience": 3,
         "icon": "fas fa-laptop-code",
         "color": "primary"
     },
-    {
-        "id":"cshar",
+    "cshar": {
         "name": "C#",
         "experience": 4,
         "icon": "fas fa-laptop-code",
         "color": "secondary"
     },
-    {
-        "id":"net",
+    "net": {
         "name": ".NET",
         "experience": 4,
         "icon": "fab fa-microsoft",
         "color": "primary"
     },
-    {
-        "id":"azure",
+    "azure": {
         "name": "Azure DevOps",
         "experience": 4,
         "icon": "fab fa-microsoft",
         "color": "primary"
     },
-    {
-        "id":"razor",
+    "razor": {
         "name": "Razor",
         "experience": 4,
         "icon": "fab fa-microsoft",
         "color": "secondary"
     },
-    {
-        "id":"md",
+    "md": {
         "name": "Markdown",
         "experience": 4,
         "icon": "fab fa-markdown",
         "color": "dark"
     },
-    {
-        "id":"git",
+    "git": {
         "name": "Git",
         "experience": 5,
         "icon": "fab fa-git-alt",
         "color": "danger"
     },
-    {
-        "id":"heroku",
+    "heroku": {
         "name": "Heroku",
         "experience": 3,
         "icon": "fas fa-server",
         "color": "secondary"
     }
-]
+}

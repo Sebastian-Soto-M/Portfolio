@@ -39,7 +39,7 @@ def index():
     projects_json.append(projects_info['python'][0])
     return render_template('views/index/index.html',
                            technologies=techs_json,
-                           projects=projects_info)
+                           projects=projects_json)
 
 
 @app.route('/download/resume')
