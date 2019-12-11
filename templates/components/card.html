@@ -17,19 +17,12 @@
 </div>
 {%- endmacro %}
 
-<!-- 
-class="carousel slide" data-ride="carousel" id="postsCarousel"
-carousel-inner carousel-item > card-deck > cards 
--->
-
-<!-- buttons -->
-<!-- <div class="container">
-        <div class="row">
-            <div class="col-12 text-md-right lead">
-                <a class="btn btn-outline-secondary prev" href="" title="go back"><i
-                        class="fa fa-lg fa-chevron-left"></i></a>
-                <a class="btn btn-outline-secondary next" href="" title="more"><i
-                        class="fa fa-lg fa-chevron-right"></i></a>
-            </div>
+{% macro narrow_project (classes='',size='col-sm-4',id='',cursor='default') -%}
+<div id="{{ id }}" class="mb-4 {{ size }} {{ classes }}">
+    <div class="card h-100 py-2 z-depth-1-half" style="cursor:{{cursor}}">
+        <div class="card-body align-items-center text-center">
+            {{ caller() }}
         </div>
     </div>
+</div>
+{%- endmacro %}

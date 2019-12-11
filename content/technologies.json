@@ -1,210 +1,163 @@
 [
     {
+        "id":"java",
         "name": "Java",
         "experience": 4,
         "icon": "fab fa-java",
-        "color": "danger",
-        "projects": [
-            "A timer app (clone of toggle)",
-            "Mine-sweeper console game",
-            "A board game center with chess and checkers"
-        ]
+        "color": "danger"
     },
     {
+        "id":"javafx",
         "name": "JavaFX",
         "experience": 4,
         "icon": "fab fa-java",
-        "color": "danger",
-        "projects": []
+        "color": "danger"
     },
     {
+        "id":"android",
         "name": "Android",
         "experience": 3,
         "icon": "fab fa-android",
-        "color": "success",
-        "projects": [
-            "Weather app",
-            "Game to test reflexes",
-            "Simple math game for babies"
-        ]
+        "color": "success"
     },
     {
+        "id":"python",
         "name": "Python",
         "experience": 3,
         "icon": "fab fa-python",
-        "color": "warning",
-        "projects": [
-            "This site was created using python"
-        ]
-    },
+        "color": "warning"
+    },java
     {
+        "id":"flask",
         "name": "Flask",
         "experience": 4,
         "icon": "fas fa-flask",
-        "color": "info",
-        "projects": [
-            "This website"
-        ]
+        "color": "info"
     },
     {
+        "id":"html",
         "name": "Html",
         "experience": 5,
         "icon": "fab fa-html5",
-        "color": "danger",
-        "projects": [
-            "Multiple university courses",
-            "This website",
-            "An administration tool for the university's teachers, students, courses and more (Proyecto #1, Cenfotec)",
-            "A local website for psicology students",
-            "Simple games using p5.js",
-            "Administration tool for a hotel platform (Proyecto #2, Cenfotec)"
-        ]
+        "color": "danger"
     },
     {
+        "id":"css",
         "name": "Css",
         "experience": 4,
         "icon": "fab fa-css3-alt",
-        "color": "info",
-        "projects": [
-            "Multiple university courses",
-            "This website",
-            "An administration tool for the university's teachers, students, courses and more (Proyecto #1, Cenfotec)",
-            "A local website for psicology students",
-            "Simple games using p5.js",
-            "Administration tool for a hotel platform (Proyecto #2, Cenfotec)"
-        ]
+        "color": "info"
     },
     {
+        "id":"sass",
         "name": "Sass",
         "experience": 4,
         "icon": "fab fa-sass",
-        "color": "secondary",
-        "projects": [
-            "Multiple university courses",
-            "This website",
-            "An administration tool for the university's teachers, students, courses and more (Proyecto #1, Cenfotec)",
-            "A local website for psicology students",
-            "Simple games using p5.js",
-            "Administration tool for a hotel platform (Proyecto #2, Cenfotec)"
-        ]
+        "color": "secondary"
     },
     {
+        "id":"bootstrap",
         "name": "Bootstrap 4",
         "experience": 4,
         "icon": "fab fa-bootstrap",
-        "color": "primary",
-        "projects": [
-            "Multiple university courses",
-            "This website",
-            "A local website for psicology students",
-            "Administration tool for a hotel platform (Proyecto #2, Cenfotec)"
-        ]
+        "color": "primary"
     },
     {
+        "id":"js",
         "name": "JavaScript",
         "experience": 4,
         "icon": "fab fa-js",
-        "color": "warning",
-        "projects": [
-            "Multiple university courses",
-            "This website",
-            "An administration tool for the university's teachers, students, courses and more (Proyecto #1, Cenfotec)",
-            "A local website for psicology students",
-            "Simple games using p5.js",
-            "Administration tool for a hotel platform (Proyecto #2, Cenfotec)"
-        ]
+        "color": "warning"
     },
     {
+        "id":"jquery",
+        "name": "jQuery",
+        "experience": 4,
+        "icon": "fas fa-globe",
+        "color": "primary"
+    },
+    {
+        "id":"node",
         "name": "Node.js",
         "experience": 3,
         "icon": "fab fa-node",
-        "color": "success",
-        "projects": [
-            "An administration tool for the university's teachers, students, courses and more (Proyecto #1, Cenfotec)"
-        ]
+        "color": "success"
     },
     {
-        "name": "Firebase",
-        "experience": 3,
-        "icon": "fas fa-database",
-        "color": "warning",
-        "projects": [
-            "Simple android apps"
-        ]
-    },
-    {
+        "id":"tsql",
         "name": "Transact-SQL",
         "experience": 4,
         "icon": "fas fa-database",
-        "color": "warning",
-        "projects": [
-            "Administration tool for a hotel platform (Proyecto #2, Cenfotec)",
-            "A timer app (clone of toggle)"
-        ]
+        "color": "warning"
     },
     {
+        "id":"firebase",
+        "name": "Firebase",
+        "experience": 3,
+        "icon": "fas fa-database",
+        "color": "warning"
+    },
+    {
+        "id":"plsql",
         "name": "Pl/SQL",
         "experience": 3,
         "icon": "fas fa-database",
-        "color": "warning",
-        "projects": [
-            "Game replica of \"Apalabrados\""
-        ]
+        "color": "warning"
     },
     {
+        "id":"cpp",
         "name": "C++",
         "experience": 3,
         "icon": "fas fa-laptop-code",
-        "color": "primary",
-        "projects": []
+        "color": "primary"
     },
     {
+        "id":"cshar",
         "name": "C#",
         "experience": 4,
         "icon": "fas fa-laptop-code",
-        "color": "secondary",
-        "projects": []
+        "color": "secondary"
     },
     {
+        "id":"net",
         "name": ".NET",
         "experience": 4,
         "icon": "fab fa-microsoft",
-        "color": "primary",
-        "projects": []
+        "color": "primary"
     },
     {
-        "name": "Razor",
-        "experience": 4,
-        "icon": "fab fa-microsoft",
-        "color": "secondary",
-        "projects": []
-    },
-    {
+        "id":"azure",
         "name": "Azure DevOps",
         "experience": 4,
         "icon": "fab fa-microsoft",
-        "color": "primary",
-        "projects": []
+        "color": "primary"
     },
     {
+        "id":"razor",
+        "name": "Razor",
+        "experience": 4,
+        "icon": "fab fa-microsoft",
+        "color": "secondary"
+    },
+    {
+        "id":"md",
         "name": "Markdown",
         "experience": 4,
         "icon": "fab fa-markdown",
-        "color": "dark",
-        "projects": []
+        "color": "dark"
     },
     {
+        "id":"git",
         "name": "Git",
         "experience": 5,
         "icon": "fab fa-git-alt",
-        "color": "danger",
-        "projects": []
+        "color": "danger"
     },
     {
+        "id":"heroku",
         "name": "Heroku",
         "experience": 3,
         "icon": "fas fa-server",
-        "color": "secondary",
-        "projects": []
+        "color": "secondary"
     }
 ]

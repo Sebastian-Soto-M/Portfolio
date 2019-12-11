@@ -1,30 +1,7 @@
 @import "../scss/mdb.scss";
 @import "card-carousel";
+@import "top-bg";
 
-html,
-body,
-header,
-.view {
-  height: 100%;
-}
-
-@media (max-width: 740px) {
-  html,
-  body,
-  header,
-  .view {
-    height: 100vh;
-  }
-}
-
-.navbar:not(.top-nav-collapse) {
-  background: transparent !important;
-  @extend .z-depth-0;
-  .nav-item > a,
-  a.navbar-brand {
-    color: white !important;
-  }
-}
 .carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
   width: 40px;
   height: 40px;

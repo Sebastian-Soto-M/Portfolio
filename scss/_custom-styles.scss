@@ -22,3 +22,17 @@
 h5 {
   letter-spacing: 3px;
 }
+// card narrow
+.view.view-cascade {
+  margin-top: -1.25rem;
+  margin-right: 4%;
+  margin-left: 4%;
+}
+.card.card-cascade .view.view-cascade {
+  border-radius: .25rem;
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+}
+.card.card-cascade.narrower {
+  margin-top: 1.25rem;
+}

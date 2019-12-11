@@ -23,7 +23,7 @@
     {
         "id": "projects",
         "title": "Projects",
-        "href": "",
+        "href": "/projects",
         "icon": "fas fa-folder-open",
         "sub_links": []
     },

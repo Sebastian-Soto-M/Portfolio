@@ -4,15 +4,17 @@
             "id": "compmatrix",
             "title": "Curd Maker",
             "href": "/crud-maker",
-            "description": "A tool I created to reduce coding time on a project.",
-            "img": "matrix.jpg"
+            "description": "A tool to reduce coding time on a project.",
+            "img": "matrix.jpg",
+            "techs": []
         },
         {
             "id": "bbmath",
             "title": "Baby Math",
             "href": "/baby-math",
             "description": "Android game for kids, created to help them study math in a fun way.",
-            "img": "numbers.jpg"
+            "img": "numbers.jpg",
+            "techs": ["android"]
         }
     ],
     "python": [
@@ -20,8 +22,27 @@
             "id": "autofm",
             "title": "Auto FM",
             "href": "/automatic-file-manager",
-            "description": "This is a console app that created to organize files.",
-            "img": "archive_1.jpg"
+            "description": "This is a console app to organize files.",
+            "img": "archive_1.jpg",
+            "techs":[]
+        },
+        {
+            "id": "timetracker",
+            "title": "Time Tracker",
+            "href": "/time-tracker",
+            "description": "This is a console app to collect information about your activities.",
+            "img": "archive_1.jpg",
+            "techs":[]
+        }
+    ],
+    "csharp": [
+        {
+            "id": "hotelplatform",
+            "title": "Kodus",
+            "href": "/kodus-hotel-platform",
+            "description": "This is an online platform for hotel management",
+            "img": "archive_1.jpg",
+            "techs":[".net","transact-sql","razor","js","html","css","scss","bootstrap 4","jquery"]
         }
     ]
 }
