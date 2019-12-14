@@ -19,14 +19,14 @@
                     <span class="sr-only">Next</span>
                 </a>
                 <div class="w-75 m-auto carousel-inner">
-                    {% for tech_row in technologies | batch(3)%}
+                    {% for tech_row in technologies.items() | batch(3)%}
                     <div class="carousel-item justify-content-center {{ 'active' if loop.index == 1 }}">
                         <div class="card-deck w-100">
-                            {% for tech in tech_row %}
+                            {% for key, value in tech_row %}
                             {% call card.minimal(size='col-sm') %}
-                            <i class="{{ tech.icon}} fa-2x {{ tech.color }}-ic mb-3"></i>
-                            <div class="text-xl font-weight-bold text-{{ tech.color }} text-uppercase mb-1">
-                                {{tech.name}}
+                            <i class="{{ value.icon}} fa-2x {{ value.color }}-ic mb-3"></i>
+                            <div class="text-xl font-weight-bold text-{{ value.color }} text-uppercase mb-1">
+                                {{value.name}}
                             </div>
                             {% endcall %}
                             {% endfor %}

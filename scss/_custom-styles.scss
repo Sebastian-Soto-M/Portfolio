@@ -29,10 +29,31 @@ h5 {
   margin-left: 4%;
 }
 .card.card-cascade .view.view-cascade {
-  border-radius: .25rem;
-  -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
-  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 .card.card-cascade.narrower {
   margin-top: 1.25rem;
+}
+.project-card,
+.project-card > .card.card-cascade.narrower > .view.view-cascade img {
+  cursor: pointer !important;
+}
+.project-card {
+  .card {
+    transition: ease-out $shadow-off-transition-time;
+    .view.view-cascade {
+      @extend .z-depth-1;
+      transition: ease-out $shadow-off-transition-time;
+    }
+  }
+  .card:hover {
+    @extend .z-depth-2;
+    transition: ease-in $shadow-on-transition-time;
+    .view.view-cascade {
+      @extend .z-depth-2;
+      transition: ease-in $shadow-on-transition-time;
+    }
+  }
 }

@@ -49,8 +49,7 @@ def download_resume():
 
 @app.route('/projects')
 def projects():
-    projects_json = utils.readJson(
-        os.path.join('content', 'projects.json'))
+    projects_json = utils.get_full_project_info()
     return render_template('views/projects/projects.html',
                            projects=projects_json)
 

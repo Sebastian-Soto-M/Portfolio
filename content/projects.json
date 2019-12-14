@@ -42,7 +42,7 @@
             "href": "/kodus-hotel-platform",
             "description": "This is an online platform for hotel management",
             "img": "archive_1.jpg",
-            "techs":[".net","transact-sql","razor","js","html","css","scss","bootstrap 4","jquery"]
+            "techs":[".net","transact-sql","razor","js","html","css","sass","bootstrap","jquery"]
         }
     ]
 }

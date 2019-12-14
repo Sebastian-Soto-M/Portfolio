@@ -27,36 +27,25 @@
 <div class="m-3">
     <div class="container mt-5">
         <div class="row">
-            <div class="col-sm-4">
-                <div class="card card-cascade narrower">
-                    <!-- Card image -->
-                    <div class="view view-cascade overlay">
-                        <img class="card-img-top"
-                            src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg"
-                            alt="Card image cap">
-                        <a>
-                            <div class="mask rgba-white-slight waves-effect waves-light"></div>
-                        </a>
-                    </div>
-                    <!-- Card content -->
-                    <div class="card-body card-body-cascade">
-                        <!-- Title -->
-                        <h4 class="font-weight-bold card-title">Cheat day inspirations</h4>
-                        <!-- Text -->
-                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-                            suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
-                        <!-- Languages -->
-                        <div class="container mb-3">
-                            <div class="row mt-2">
-                                <span class="mr-2 mb-2 badge badge-default">default</span>
-                                <span class="mr-2 mb-2 badge badge-default">default</span>
-                                <span class="mr-2 mb-2 badge badge-default">default</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="form-inline md-form form-sm mt-0">
+                <i class="fas fa-search" aria-hidden="true"></i>
+                <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
+                    aria-label="Search">
             </div>
         </div>
+        {% for proj_row in projects | batch(3) %}
+        <div class="row mb-5">
+            {% for proj in proj_row %}
+            {{ card.narrow_project(
+                    id=proj['id'],
+                    title=proj['title'],
+                    description=proj['description'],
+                    labels=proj['techs'],
+                    img=proj['img']
+                    ) }}
+            {% endfor %}
+        </div>
+        {% endfor %}
     </div>
 </div>
 {% endblock content %}
@@ -64,3 +53,31 @@
 {% block scripts %}
 <script src="{{ url_for('static', filename='js/custom/views/projects.js') }}"></script>
 {% endblock scripts %}
+<div class="col-sm-4">
+    <div class="card card-cascade narrower">
+        <!-- Card image -->
+        <div class="view view-cascade overlay">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg"
+                alt="Card image cap">
+            <a>
+                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+            </a>
+        </div>
+        <!-- Card content -->
+        <div class="card-body card-body-cascade">
+            <!-- Title -->
+            <h4 class="font-weight-bold card-title">Cheat day inspirations</h4>
+            <!-- Text -->
+            <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+            <!-- Languages -->
+            <div class="container mb-3">
+                <div class="row mt-2">
+                    <span class="mr-2 mb-2 badge badge-default">default</span>
+                    <span class="mr-2 mb-2 badge badge-default">default</span>
+                    <span class="mr-2 mb-2 badge badge-default">default</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

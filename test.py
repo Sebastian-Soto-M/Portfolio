@@ -1,5 +1,10 @@
 import os
 import json
-import utils
-techs_json = utils.readJson(os.path.join('content', 'technologies.json'))
-print(json.dumps(techs_json,indent=4))
+from utils import readJson
+
+
+def print_json(info):
+    print(json.dumps(info, indent=4))
+    pass
+
+

@@ -71,7 +71,7 @@
         "icon": "fab fa-node",
         "color": "success"
     },
-    "tsql": {
+    "transact-sql": {
         "name": "Transact-SQL",
         "experience": 4,
         "icon": "fas fa-database",
@@ -95,13 +95,13 @@
         "icon": "fas fa-laptop-code",
         "color": "primary"
     },
-    "cshar": {
+    "csharp": {
         "name": "C#",
         "experience": 4,
         "icon": "fas fa-laptop-code",
         "color": "secondary"
     },
-    "net": {
+    ".net": {
         "name": ".NET",
         "experience": 4,
         "icon": "fab fa-microsoft",
