@@ -52,8 +52,12 @@ h5 {
     @extend .z-depth-2;
     transition: ease-in $shadow-on-transition-time;
     .view.view-cascade {
-      @extend .z-depth-2;
+      @extend .z-depth-1-half;
       transition: ease-in $shadow-on-transition-time;
     }
   }
+}
+
+.card {
+  max-height: 25rem;
 }

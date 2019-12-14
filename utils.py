@@ -15,6 +15,7 @@ def get_full_project_info():
         for proj in v:
             proj["techs"].append(k)
             full_techs = []
+            proj["techs"].sort()
             for tech in proj["techs"]:
                 full_techs.append({
                     "name": technologies[tech]['name'],
