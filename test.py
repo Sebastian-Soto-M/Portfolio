@@ -1,6 +1,6 @@
 import os
 import json
-from utils import readJson
+import utils
 
 
 def print_json(info):
@@ -8,3 +8,6 @@ def print_json(info):
     pass
 
 
+article = 'balanced_scorecard'
+art_dict = utils.get_article_by_id(article)
+print(art_dict)

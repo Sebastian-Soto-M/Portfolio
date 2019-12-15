@@ -1,0 +1,42 @@
+Balanced ScoreCard is a performance metric created to identify and improve various internal functions of a business and their resulting results, proven usable feedback to the organization. The concept was developed in 1992 by Robert Kaplan and David Norton, was created in order to measure the activity and evolution of a company based on its vision, long-term strategy and more aspects unrelated from a financial point of view. It allows the organization's strategy to be converted into operational objectives to improve results. 
+
+Balanced Scorecard allows you to have control of the state of corporate health and the way in which actions are carried out to achieve vision, and by its characteristics. As mentioned previously, this tool can be useful by department or at a global level in the company, with defined business vision and strategies and that functional autonomy and adjust to its space in question and the needs of the company.
+
+
+The operational objectives and their indicators align in 4 perspectives:
+1. Learning and growth
+2. Financial
+3. The client's internal processes
+
+## Implementation
+
+To implement the Balanced Scorecard, you first need to make a strategic map, to establish the perspectives, relevant objectives to make the vision a reality.
+The set of objectives has a cause-effect relationship. Because one has been achieved, other objectives are advanced simultaneously.
+For good monitoring of the most relevant objectives, you must use the KPI (Key Performance Indicator) or Key Performance Indicator.
+
+A KPI is a measurable value that demonstrates how effectively a business objective is being met in a company or organization. Organizations use KPIs at multiple levels to assess their success in achieving goals. High-level KPIs can focus on overall business performance, while low-level KPIs can focus on processes in departments such as sales, marketing, human resources and others.
+
+According to Kaplan and Norton the creators of the Balanced Scorecard, the amount of KPI should not exceed 7 per objective, for a proper Balanced Scorecard it is advisable not to exceed 27 indicators.
+
+## Advantages
+
+* Better strategic planning.
+    * The Balanced Scorecards provide a powerful framework for a construction and communication strategy. It helps the administration to see the cause and effect between different objectives. The main factors are identified to create a broader picture of the strategic landscape of the organization.
+
+* Better process alignment.
+    * A Balanced Scorecard implemented correctly also helps organizational processes such as: budgeting, risk management and analytics of strategic priorities. This can help create a truly focused organization at a strategic level.
+
+* Better information management
+    * The Balanced Scorecard helps organizations design KPIs for various strategic objectives, this ensures that company measurements really matter. Research shows that companies tend to report superior quality of information management, for better decision making.
+
+## Disadvantages
+
+* Hard to implement
+    * All employees must buy a Balanced Scorecard system to work properly, this can be very difficult. If employees do not understand how the system works or do not see its benefits, they may not invest in the Balanced Scorecard. Those who resist change may have problems using the new system.
+    * Even if employees accept the system they must understand it in order to use it properly. Some may eventually feel pressured to use it without feeling benefits without seeing it as a beneficial tool causing them frustration.
+
+* Strategic management and metrics planning is crucial
+    * An effective Balanced Scorecard aligns with the strategic objectives, categorizing them into measurable metrics. If it is not planned well between these elements and the taxpayers, the system could give false results or not give the expected result. It can become overloaded with information and be difficult to handle if they add too many metrics or objectives to the desired results. If the controls or metrics are inconsistent, it may not generate the ideal benefits for the business, moving the organization or business away from the strategic direction.
+
+* Lack of external focus
+    * Balanced Scorecards can give a broader internal focus, but they don't give you the full picture. By default they consider your customers but do not take into account other external factors such as competitors or changes in the business environment. This can lead to an over emphasis on internal performance and a lack of awareness of external factors that could influence the company's operations.

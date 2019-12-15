@@ -27,36 +27,36 @@
         "title":"Agile Software Development",
         "img":"article_agile.jpg",
         "img_pos": "",
-        "href":"agile-software-development"
+        "href":"agile_software_development"
     },
     {
         "title":"Stress On Students",
         "img":"article_stress.jpg",
         "img_pos": "",
-        "href":"stress-on-students"
+        "href":"stress_on_students"
     },
     {
-        "title":"Learning Methodologies",
-        "img":"article_learning.jpg",
+        "title":"Balanced Scorecard",
+        "img":"article_balanced_scorecard.jpg",
         "img_pos": "",
-        "href":"learning-types"
+        "href":"balanced_scorecard"
     },
     {
         "title":"The origins of Jazz",
         "img":"article_jazz.jpg",
         "img_pos": "",
-        "href":"jazz-origins"
-    },
-    {
-        "title":"The Body Never Lies",
-        "img":"article_body_language.jpg",
-        "img_pos": "bottom",
-        "href":"body-language"
+        "href":"jazz_origins"
     },
     {
         "title":"Ethical Hacking",
         "img":"article_ethical_hacking.jpg",
         "img_pos": "",
-        "href":"ethical-hacking"
+        "href":"ethical_hacking"
+    },
+    {
+        "title":"The Body Never Lies",
+        "img":"article_body_language.jpg",
+        "img_pos": "bottom",
+        "href":"body_language"
     }
 ]

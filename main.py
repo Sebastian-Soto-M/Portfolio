@@ -63,8 +63,12 @@ def blog():
 
 @app.route('/blog/<string:article>')
 def blog_saas(article):
-    return render_template('views/article/base.html',
-                           blog=utils.get_article_by_id(article))
+    art_dict = utils.get_article_by_id(article)
+    try:
+        return render_template('views/article/base.html',
+                               blog=utils.get_article_by_id(article))
+    except Exception as e:
+        return page_not_found(e)
 
 
 @app.errorhandler(404)
