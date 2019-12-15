@@ -1,10 +1,14 @@
 {% macro link(id,title,href,icon="") -%}
 <li class="nav-item" id="nv_{{ id }}">
+  {% if href | length %}
   <a class="nav-link waves-effect" href="{{ href }}" target="_self">
-    {% if icon|length %}
-    <i class="{{ icon }}"></i>
-    {% endif %}
-    <span>{{ title }}</span></a>
+  {% else %}
+  <a class="nav-link waves-effect">
+  {% endif %}
+  {% if icon | length %}
+  <i class="{{ icon }}"></i>
+  {% endif %}
+  <span>{{ title }}</span></a>
 </li>
 {%- endmacro %}
 
@@ -21,14 +25,14 @@
   <div class="dropdown-menu dropdown-primary" aria-labelledby="dd_{{ id }}">
     {% for link in links %}
     <h6 class="dropdown-header text-capitalize">{{ link.header }}:</h6>
-      {% for route in link.routes %}
-      <a class="dropdown-item" href="{{ route.href }}">
-          {{ route.title }}
-      </a>
-      {% endfor %}
-      {% if not loop.last %}
-        <div class="dropdown-divider"></div>
-      {% endif %}
+    {% for route in link.routes %}
+    <a class="dropdown-item" href="{{ route.href }}">
+      {{ route.title }}
+    </a>
+    {% endfor %}
+    {% if not loop.last %}
+    <div class="dropdown-divider"></div>
+    {% endif %}
     {% endfor %}
   </div>
 </li>

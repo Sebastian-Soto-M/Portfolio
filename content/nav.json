@@ -3,35 +3,36 @@
         "id": "home",
         "title": "Home",
         "href": "/",
-        "icon": "fas fa-home",
         "sub_links": []
     },
     {
-        "id": "education",
-        "title": "Education",
-        "href": "/education",
-        "icon": "fas fa-award",
-        "sub_links": []
-    },
-    {
-        "id": "technologies",
-        "title": "Technologies",
-        "href": "/technologies",
-        "icon": "fas fa-laptop-code",
+        "id": "about",
+        "title": "About",
+        "href": "/about",
         "sub_links": []
     },
     {
         "id": "projects",
         "title": "Projects",
         "href": "/projects",
-        "icon": "fas fa-folder-open",
+        "sub_links": []
+    },
+    {
+        "id": "technologies",
+        "title": "Technologies",
+        "href": "",
+        "sub_links": []
+    },
+    {
+        "id": "education",
+        "title": "Education",
+        "href": "/education",
         "sub_links": []
     },
     {
         "id": "blog",
         "title": "Blog",
         "href": "/blog",
-        "icon": "fas fa-book",
         "sub_links": []
     }
 ]

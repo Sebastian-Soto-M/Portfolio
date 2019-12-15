@@ -1,0 +1,35 @@
+{% extends 'views/base/base.html' %}
+{% import 'components/card.html' as card %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('.static',filename='css/blog.min.css') }}">
+{% endblock styles %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block content %}
+<div class="mt-5 pt-5">
+    <section class="dark-grey-text mx-5">
+        <div class="container-fluid">
+            <!--Section: Content-->
+            <div class="text-center">
+                <!-- Section heading -->
+                <h2 class="text-center font-weight-bold mb-4 pb-2" style="display: inline-block;"><span class="box-underline">Blog</span></h2>
+            </div>
+            <div class="card-columns">
+                {% for a in articles %}
+                <!-- <div class="col-lg-4 col-md-12 mb-4"> -->
+                    {% set img_path = url_for('.static', filename='img/articles/') + a.img %}
+                    {{ card.img(a.title, img_path, a.href) }}
+                <!-- </div> -->
+                {% endfor %}
+            </div>
+        </div>
+</div>
+{% endblock content %}
+
+{% block scripts %}
+
+{% endblock scripts %}

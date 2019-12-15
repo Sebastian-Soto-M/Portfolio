@@ -4,26 +4,12 @@
             <section class="dark-grey-text text-center">
                 <h3 class="font-weight-bold mb-4 pb-2">Some of my projects</h3>
                 <p class="text-muted w-responsive mx-auto mb-5">
-                    Here are some of the projects I have programed. Most of them are tools I use on a day to day basis, and others are apps I found to be useful.
+                    Here are some of the projects I have programed. Most of them are tools I use on a day to day basis,
+                    and others are apps I found to be useful.
                 </p>
-                <a class="btn btn-indigo btn-lg btn-rounded waves-effect waves-light mb-5" href="/projects">See more!</a>
                 <div class="row">
                     {% for proj in projects %}
-                    <div class="col-lg-4 col-md-12 mb-5">
-                            <div class="overlay rounded z-depth-1">
-                                <img src="{{ url_for('static', filename='img/projects/') }}{{ proj.img }}" class="img-fluid z-depth-1-half"
-                                    alt="{{ proj.img }}">
-                                <a>
-                                    <div class="mask rgba-white-slight"></div>
-                                </a>
-                            </div>
-
-                            <div class="px-3 pt-3 mx-1 mt-1 pb-0">
-                                <h4 class="font-weight-bold mt-1 mb-3">{{ proj.title }}</h4>
-                                <p class="text-muted">{{ proj.description }}</p>
-                                <a class="btn btn-indigo btn-sm btn-rounded" href="{{ proj.href }}"><i class="fas fa-clone left"></i> View project</a>
-                            </div>
-                        </div>
+                        {{ card.read_more(proj.img, proj.title, proj.description, proj.href,"View project") }}
                     {% endfor %}
                 </div>
             </section>

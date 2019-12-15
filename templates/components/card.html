@@ -1,8 +1,18 @@
-{% macro base(title,content) -%}
-<div class="card">
-    <div class="card-body">
-        <h5 class="card-title">{{ title }}</h5>
-        <p class="card-text">{{ content }}</p>
+{% macro read_more(img, title, description, href, btn_text) -%}
+<div class="col-lg-4 col-md-12 mb-5">
+    <div class="overlay rounded z-depth-1">
+        <img src="{{ url_for('static', filename='img/projects/') }}{{ img }}"
+            class="img-fluid z-depth-1-half" alt="{{ img }}">
+        <a>
+            <div class="mask rgba-white-slight"></div>
+        </a>
+    </div>
+
+    <div class="px-3 pt-3 mx-1 mt-1 pb-0">
+        <h4 class="font-weight-bold mt-1 mb-3">{{ title }}</h4>
+        <p class="text-muted">{{ description }}</p>
+        <a class="btn btn-indigo btn-sm btn-rounded" href="{{ href }}"><i
+                class="fas fa-clone left"></i>{{ btn_text }}</a>
     </div>
 </div>
 {%- endmacro %}
@@ -45,3 +55,23 @@
     </div>
 </div>
 {%- endmacro %}
+
+{% macro img(title, img, href) %}
+<div class="card news-tile view z-depth-1 rounded lift">
+    <a href="{{ href }}" class="text-white">
+        <img src="{{ img }}"
+            class="img-fluid rounded-bottom" alt="{{ title }} img">
+        <div class="mask rgba-stylish-strong">
+            <div class="text-white text-center py-lg-5 py-0 my-0">
+                <div>
+                    <h4 class="card-title font-weight-bold pt-2">
+                        <strong>{{ title }}</strong>
+                    </h4>
+
+                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+{% endmacro %}

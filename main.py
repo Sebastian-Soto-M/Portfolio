@@ -39,7 +39,8 @@ def index():
     projects_json.append(projects_info['python'][0])
     return render_template('views/index/index.html',
                            technologies=techs_json,
-                           projects=projects_json)
+                           projects=projects_json,
+                           index=True)
 
 
 @app.route('/download/resume')
@@ -52,7 +53,10 @@ def projects():
     projects_json = utils.get_full_project_info()
     return render_template('views/projects/projects.html',
                            projects=projects_json)
-
+@app.route('/blog')
+def blog():
+    articles_json = utils.readJson(os.path.join('content', 'articles.json'))
+    return render_template('views/blog/blog.html',articles=articles_json)
 
 @app.errorhandler(404)
 def page_not_found(e):
