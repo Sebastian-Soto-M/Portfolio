@@ -7,6 +7,13 @@ def readJson(file_path):
         return json.load(f)
 
 
+def get_article_by_id(id: str):
+    articles_json = readJson(os.path.join('content', 'articles.json'))
+    for a in articles_json:
+        if a['href'] == id:
+            return a
+
+
 def get_full_project_info():
     projects = readJson(os.path.join('content', 'projects.json'))
     technologies = readJson(os.path.join('content', 'technologies.json'))

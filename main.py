@@ -53,10 +53,19 @@ def projects():
     projects_json = utils.get_full_project_info()
     return render_template('views/projects/projects.html',
                            projects=projects_json)
+
+
 @app.route('/blog')
 def blog():
     articles_json = utils.readJson(os.path.join('content', 'articles.json'))
-    return render_template('views/blog/blog.html',articles=articles_json)
+    return render_template('views/blog/blog.html', articles=articles_json)
+
+
+@app.route('/blog/<string:article>')
+def blog_saas(article):
+    return render_template('views/article/base.html',
+                           blog=utils.get_article_by_id(article))
+
 
 @app.errorhandler(404)
 def page_not_found(e):
