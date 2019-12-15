@@ -9,7 +9,15 @@
                 </p>
                 <div class="row">
                     {% for proj in projects %}
-                        {{ card.read_more(proj.img, proj.title, proj.description, proj.href,"View project") }}
+                    {{ card.narrow_project(
+                    id=proj['id'],
+                    title=proj['title'],
+                    description=proj['description'],
+                    labels=proj['techs'],
+                    img=proj['img'],
+                    size='col',
+                    classes='mb-5'
+                    ) }}
                     {% endfor %}
                 </div>
             </section>

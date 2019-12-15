@@ -1,6 +1,7 @@
 import os
 import utils
 import jinja2
+import random
 from operator import itemgetter
 from flask import Flask, render_template, send_file
 
@@ -32,14 +33,11 @@ def inject_personal_info():
 @app.route('/')
 def index():
     techs_json = utils.readJson(os.path.join('content', 'technologies.json'))
-    projects_info = utils.readJson(os.path.join('content', 'projects.json'))
-    projects_json = []
-    projects_json.append(projects_info['java'][0])
-    projects_json.append(projects_info['java'][1])
-    projects_json.append(projects_info['python'][0])
+    projects_json = utils.get_full_project_info()
+    rand_list = random.sample(projects_json, k=3)
     return render_template('views/index/index.html',
                            technologies=techs_json,
-                           projects=projects_json,
+                           projects=rand_list,
                            index=True)
 
 
