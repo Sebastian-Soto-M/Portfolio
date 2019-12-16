@@ -68,8 +68,11 @@ def blog():
 def blog_saas(article):
     art_dict = utils.get_article_by_id(article)
     try:
-        return render_template('views/article/base.html',
-                               blog=utils.get_article_by_id(article), dir_title=art_dict['title'])
+        if os.stat(os.path.join('templates', 'views', 'article', 'sections', article+'.html')).st_size == 0:
+            return render_template('views/build.html')
+        else:
+            return render_template('views/article/base.html',
+                                   blog=utils.get_article_by_id(article), dir_title=art_dict['title'])
     except Exception as e:
         return page_not_found(e)
 
@@ -82,6 +85,7 @@ def about():
 @app.route('/education')
 def education():
     return render_template('views/education/education.html', dir_title='Education')
+
 
 @app.route('/contact')
 def contact():
