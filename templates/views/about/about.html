@@ -1,0 +1,60 @@
+{% extends "views/base/base.html" %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('.static',filename='css/about.min.css') }}">
+{% endblock styles %}
+
+{% block header %}
+{% set bg = url_for('static', filename='img/bg-me.jpg') %}
+<div class="view jarallax z-depth-1" data-jarallax='{"speed": 0.2}'
+    style="background-image: url('{{ bg }}'); background-repeat: no-repeat; background-size: cover; background-position: right;">
+    <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 white-text text-center">
+                    <h1 class="display-3 mb-0 pt-md-5 pt-5 white-text font-weight-bold wow fadeInDown text-capitalize"
+                        data-wow-delay="0.3s">get to know me better
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock header %}
+
+{% block content %}
+<!-- about -->
+<div class="container mt-5 pt-4">
+    <div class="row justify-content-around">
+        <div class="col-md-5">
+            <div class="text-center">
+                <h2 class="text-center font-weight-bold mb-4 pb-2" style="display: inline-block;"><span
+                        class="box-underline">About me</span></h2>
+            </div>
+            <p>
+                I am freelance software developer with experience using a variety of technologies.
+                Passionate about automation and making life easier and enhancing the
+                everyday life experience through the use of technology. An experienced team
+                player, able to adapt to the needs of the company or team, firm believer
+                that communication is key for success on every project. I'm currently studying in Cenfotec University
+                (San José, Montes de Oca, Costa Rica).
+            </p>
+            <p>
+                Teamwork is something that I really enjoy, since most of the time I end up learning something from my
+                teammates and hopefully they also get to learn something from me. I believe that the way to achieve
+                success on any project is communication, because doing so respectfully could prevent future difficulties
+                and improve the working experience for the people involved.
+            </p>
+        </div>
+        <div class="col-sm-5">
+            <img src="{{ url_for('static', filename='img/me.jpg') }}" alt="Foto of Me"
+                class="img-fluid z-depth-1 rounded-lg">
+        </div>
+    </div>
+</div>
+{% include 'views/about/skills.html' %}
+{% endblock content %}
+
+{% block scripts %}
+{% endblock scripts %}

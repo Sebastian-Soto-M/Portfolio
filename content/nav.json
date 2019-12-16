@@ -34,5 +34,11 @@
         "title": "Blog",
         "href": "/blog",
         "sub_links": []
+    },
+    {
+        "id": "contact",
+        "title": "Contact",
+        "href": "/contact",
+        "sub_links": []
     }
 ]

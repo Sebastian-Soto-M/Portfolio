@@ -1,6 +1,9 @@
 @import "../scss/mdb.scss";
 @import "news";
 
+.article > div {
+  line-height: 1.8rem;
+}
 .navbar:not(.top-nav-collapse) {
   background-color: $white !important;
   @extend .z-depth-1;
@@ -9,8 +12,4 @@
   a.navbar-brand {
     color: inherit !important;
   }
-}
-
-.article > div {
-  line-height: 1.8rem;
 }

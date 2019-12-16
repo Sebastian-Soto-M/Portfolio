@@ -50,13 +50,13 @@ def download_resume():
 def projects():
     projects_json = utils.get_full_project_info()
     return render_template('views/projects/projects.html',
-                           projects=projects_json)
+                           projects=projects_json, dir_title='Projects')
 
 
 @app.route('/blog')
 def blog():
     articles_json = utils.readJson(os.path.join('content', 'articles.json'))
-    return render_template('views/blog/blog.html', articles=articles_json)
+    return render_template('views/blog/blog.html', articles=articles_json, dir_title='Blog')
 
 
 @app.route('/blog/<string:article>')
@@ -64,10 +64,13 @@ def blog_saas(article):
     art_dict = utils.get_article_by_id(article)
     try:
         return render_template('views/article/base.html',
-                               blog=utils.get_article_by_id(article))
+                               blog=utils.get_article_by_id(article), dir_title=art_dict['title'])
     except Exception as e:
         return page_not_found(e)
 
+@app.route('/about')
+def about():
+    return render_template('views/about/about.html', dir_title='About')
 
 @app.errorhandler(404)
 def page_not_found(e):
