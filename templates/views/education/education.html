@@ -1,0 +1,139 @@
+{% extends "views/base/base.html" %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('.static',filename='css/about.min.css') }}">
+{% endblock styles %}
+
+{% block header %}
+{% set bg = url_for('static', filename='img/bg-education.jpg') %}
+<div class="view jarallax z-depth-1" data-jarallax='{"speed": 0.2}'
+    style="background-image: url('{{ bg }}'); background-repeat: no-repeat; background-size: cover; background-position: right;">
+    <div class="mask rgba-blue-light d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 white-text text-center">
+                    <h1 class="display-3 mb-0 pt-md-5 pt-5 white-text font-weight-bold wow fadeInDown text-capitalize"
+                        data-wow-delay="0.3s">education
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock header %}
+
+{% block content %}
+<!-- about -->
+<div class="container mt-5 pt-4 mb-5">
+    <!-- College -->
+    <div class="row">
+        <div class="col">
+            <div class="row text-center">
+                <div class="col">
+                    <div class="text-center">
+                        <!-- Section heading -->
+                        <h2 class="text-center font-weight-bold mb-4 pb-2" style="display: inline-block;"><span
+                                class="box-underline">College</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-lg-7 align-self-center">
+                    <h4>
+                        Software Engineering Undergraduate
+                    </h4>
+                    <span class="text-muted">Universidad Cenfotec, San Jose, Costa Rica</span>
+                    <ul class="py-2" style="columns: 2; column-gap: 2rem;">
+                        <li>
+                            Inglés para TI - 1
+                        </li>
+                        <li>
+                            Introducción a la TI
+                        </li>
+                        <li>
+                            Fundamentos de Programación
+                        </li>
+                        <li>
+                            Proyecto de Ing. Software 1
+                        </li>
+                        <li>
+                            Inglés para TI - 2
+                        </li>
+                        <li>
+                            Procesos Empresariales
+                        </li>
+                        <li>
+                            Fundamentos de Base de Datos
+                        </li>
+                        <li>
+                            Programación Orientada a Objetos
+                        </li>
+                        <li>
+                            Estructuras Discretas
+                        </li>
+                        <li>
+                            Inglés para TI - 3
+                        </li>
+                        <li>
+                            Estructuras de Datos 1
+                        </li>
+                        <li>
+                            Programación de Patrones
+                        </li>
+                        <li>
+                            Proyecto de Ing. Software 2
+                        </li>
+                        <li>
+                            Inglés para TI - 4
+                        </li>
+                        <li>
+                            Programación de Bases de Datos
+                        </li>
+                        <li>
+                            Diseño Conceptual de Software
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-5 align-self-center text-center">
+                    <img src="{{ url_for('static', filename='img/logos/cenfotec.png') }}" alt="Cenfotec Logo"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Languages -->
+    <div class="row">
+        <div class="col">
+            <div class="row text-center">
+                <div class="col">
+                    <div class="text-center">
+                        <!-- Section heading -->
+                        <h2 class="text-center font-weight-bold mb-4 pb-2" style="display: inline-block;"><span
+                                class="box-underline">Languages</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-around text-center">
+                <div class="col-sm">
+                    <h4>
+                        Spanish
+                    </h4>
+                    <span class="text-muted">Native</span>
+                </div>
+                <div class="col-sm align-self-center">
+                    <h4>
+                        English
+                    </h4>
+                    <span class="text-muted">Advanced</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+{% block scripts %}
+{% endblock scripts %}

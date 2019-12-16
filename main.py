@@ -52,9 +52,11 @@ def projects():
     return render_template('views/projects/projects.html',
                            projects=projects_json, dir_title='Projects')
 
+
 @app.route('/projects/<string:id>')
 def project_definition(id):
     return render_template('views/build.html')
+
 
 @app.route('/blog')
 def blog():
@@ -71,9 +73,20 @@ def blog_saas(article):
     except Exception as e:
         return page_not_found(e)
 
+
 @app.route('/about')
 def about():
     return render_template('views/about/about.html', dir_title='About')
+
+
+@app.route('/education')
+def education():
+    return render_template('views/education/education.html', dir_title='Education')
+
+@app.route('/contact')
+def contact():
+    return render_template('views/contact/contact.html', dir_title='Contact')
+
 
 @app.errorhandler(404)
 def page_not_found(e):

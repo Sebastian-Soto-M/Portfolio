@@ -1,6 +1,10 @@
 // Your custom styles
 // scroll top btn
 
+.col div p{
+  line-height: 1.8rem;
+}
+
 #btn_scroll_top {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
