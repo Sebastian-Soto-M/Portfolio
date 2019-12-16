@@ -52,6 +52,9 @@ def projects():
     return render_template('views/projects/projects.html',
                            projects=projects_json, dir_title='Projects')
 
+@app.route('/projects/<string:id>')
+def project_definition(id):
+    return render_template('views/build.html')
 
 @app.route('/blog')
 def blog():

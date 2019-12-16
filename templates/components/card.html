@@ -29,30 +29,32 @@
 
 {% macro narrow_project(id,img,title,description,labels=[],size='col',classes='') -%}
 <div id="{{ id }}" class="project-card {{ size }} {{ classes }}">
-    <div class="card card-cascade narrower">
-        <!-- Card image -->
-        <div class="view view-cascade overlay">
-            <img class="card-img-top" src="{{ url_for('static', filename='img/projects/') }}{{ img }}"
-                alt="Project Image">
-        </div>
-        <!-- Card content -->
-        <div class="card-body card-body-cascade">
-            <!-- Title -->
-            <h4 class="font-weight-bold card-title">{{ title }}</h4>
-            <!-- Text -->
-            <p class="card-text">
-                {{ description }}
-            </p>
-            <!-- Languages -->
-            <div class="container">
-                <div class="row mt-2">
-                    {% for label in labels %}
-                        <span name='{{ label.name | lower }}' class="mr-2 mb-2 badge badge-{{ label.color }}">{{ label.name }}</span>    
-                    {% endfor %}
+    <a class="dark-grey-text" href="/projects/{{ id }}">
+        <div class="card card-cascade narrower">
+            <!-- Card image -->
+            <div class="view view-cascade overlay">
+                <img class="card-img-top" src="{{ url_for('static', filename='img/projects/') }}{{ img }}"
+                    alt="Project Image">
+            </div>
+            <!-- Card content -->
+            <div class="card-body card-body-cascade">
+                <!-- Title -->
+                <h4 class="font-weight-bold card-title">{{ title }}</h4>
+                <!-- Text -->
+                <p class="card-text">
+                    {{ description }}
+                </p>
+                <!-- Languages -->
+                <div class="container">
+                    <div class="row mt-2">
+                        {% for label in labels %}
+                            <span name='{{ label.name | lower }}' class="mr-2 mb-2 badge badge-{{ label.color }}">{{ label.name }}</span>    
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </a>
 </div>
 {%- endmacro %}
 
