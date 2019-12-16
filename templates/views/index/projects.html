@@ -1,26 +1,32 @@
 <section id="projects">
     <div class="bg-white py-2 z-depth-1">
         <div class="container my-5">
-            <section class="dark-grey-text text-center">
-                <h3 class="font-weight-bold mb-4 pb-2">Some of my projects</h3>
-                <p class="text-muted w-responsive mx-auto mb-5">
-                    Here are some of the projects I have programed. Most of them are tools I use on a day to day basis,
-                    and others are apps I found to be useful.
-                </p>
-                <div class="row">
-                    {% for proj in projects %}
-                    {{ card.narrow_project(
-                    id=proj['id'],
-                    title=proj['title'],
-                    description=proj['description'],
-                    labels=proj['techs'],
-                    img=proj['img'],
-                    size='col',
-                    classes='mb-5'
-                    ) }}
-                    {% endfor %}
-                </div>
-            </section>
+            <div class="row">
+                <section class="dark-grey-text text-center">
+                    <h3 class="font-weight-bold mb-4 pb-2">Some of my projects</h3>
+                    <p class="text-muted w-responsive mx-auto mb-5">
+                        Here are some of the projects I have programed. Most of them are tools I use on a day to day
+                        basis,
+                        and others are apps I found to be useful.
+                    </p>
+                    <div class="row">
+                        {% for proj in projects %}
+                        {{ card.narrow_project(
+                        id=proj['id'],
+                        title=proj['title'],
+                        description=proj['description'],
+                        labels=proj['techs'],
+                        img=proj['img'],
+                        size='col',
+                        classes='mb-5'
+                        ) }}
+                        {% endfor %}
+                    </div>
+                </section>
+            </div>
+            <div class="row justify-content-center">
+                <a href="/projects" class="btn btn-indigo btn-rounded mx-0">View more</a>
+            </div>
         </div>
     </div>
 </section>
