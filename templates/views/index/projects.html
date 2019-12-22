@@ -9,7 +9,7 @@
                         basis,
                         and others are apps I found to be useful.
                     </p>
-                    <div class="row">
+                    <div class="row w-100 mx-0 justify-content-around">
                         {% for proj in projects %}
                         {{ card.narrow_project(
                         id=proj['id'],
@@ -17,7 +17,7 @@
                         description=proj['description'],
                         labels=proj['techs'],
                         img=proj['img'],
-                        size='col',
+                        size='col-md-4',
                         classes='mb-5'
                         ) }}
                         {% endfor %}
