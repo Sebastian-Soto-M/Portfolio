@@ -67,12 +67,13 @@ def blog():
 @app.route('/blog/<string:article>')
 def blog_saas(article):
     art_dict = utils.get_article_by_id(article)
+    article_path = os.path.join('views', 'blog', 'article')
     try:
-        if os.stat(os.path.join('templates', 'views', 'article', 'sections', article+'.html')).st_size == 0:
+        if os.stat(os.path.join('templates', article_path, 'html', article+'.html')).st_size == 0:
             return render_template('views/build.html')
         else:
-            return render_template('views/article/base.html',
-                                   blog=utils.get_article_by_id(article), dir_title=art_dict['title'])
+            return render_template(os.path.join(article_path, 'base.html'),
+                                blog=utils.get_article_by_id(article), dir_title=art_dict['title'])
     except Exception as e:
         return page_not_found(e)
 

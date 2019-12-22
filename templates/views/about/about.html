@@ -5,9 +5,9 @@
 {% endblock styles %}
 
 {% block header %}
-{% set bg = url_for('static', filename='img/bg-me.jpg') %}
+{% set bg = url_for('static', filename='img/backgrounds/bg-me.jpg') %}
 <div class="view jarallax z-depth-1" data-jarallax='{"speed": 0.2}'
-    style="background-image: url('{{ bg }}'); background-repeat: no-repeat; background-size: cover; background-position: right;">
+    style="background-image: url('{{ bg }}'); background-position: right;">
     <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
         <div class="container">
             <div class="row">

@@ -23,7 +23,6 @@ header,
   }
 }
 
-
 @media (max-width: 991px) {
   .navbar:not(.top-nav-collapse) {
     background-color: $white !important;
@@ -46,4 +45,10 @@ header,
       color: inherit !important;
     }
   }
+}
+
+div.view.jarallax {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
