@@ -24,6 +24,9 @@
   li {
     margin-bottom: 1rem;
   }
+  .row>div{
+    margin-bottom: 3rem !important;
+  }
 }
 .navbar:not(.top-nav-collapse) {
   background-color: $white !important;
