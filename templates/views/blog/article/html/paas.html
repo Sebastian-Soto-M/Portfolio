@@ -1,33 +1,87 @@
-<p>In order to understand what a platform as a service is, it is important to understand what platform means by itself. For example in a company, the applications: Administrative Systems, ERP, CRM, run on a platform, which consists of middleware, database and operating system. This platform is installed in a storage, computing and networking infrastructure, in other words the physical space and the hardware elements that are needed so that these previously mentioned applications can be used.</p>
-<p>Platform as a service “PAAS”, is a platform for development and hosting of applications of a company. This means that it takes care of the aforementioned, but with a big difference: these are a space in the cloud that allows customers to have secure access to the services acquired through the internet, paying only for the requested services. What is better than having all the services stored in computers within the company and having to pay for the physical space where the hardware is located, in addition to maintaining it and many other expenses.</p>
-<p>On these platforms you can hire some services that are managed by software from the provider, in these cases, this software is used as SaaS.</p>
+{% import 'components/table.html' as table %}
+
+<p>In order to understand what a platform as a service is, it is important to understand what platform means by itself.
+    For example in a company, the applications: Administrative Systems, ERP, CRM, run on a platform, which consists of
+    middleware, database and operating system. This platform is installed in a storage, computing and networking
+    infrastructure, in other words the physical space and the hardware elements that are needed so that these previously
+    mentioned applications can be used.</p>
+<p>Plaform as a service (PaaS) is a platform for the development and hosting of company applications. These platforms
+    are a cloud space that allows customers to have secure access to services purchased over the Internet, paying only
+    for the services requested.
+</p>
 <h2 id="types">Types</h2>
 <ul>
-<li>Public
-<ul>
-<li>It is shared among clients of the platform</li>
-</ul></li>
-<li>Private
-<ul>
-<li>Meets higher customer requirements to focus more on security</li>
-<li>More control from the client on the applications</li>
-</ul></li>
-<li>Hybrid
-<ul>
-<li>Allows customers a finite number of customizations</li>
-<li>Cheaper than a private platform, but with several of its advantages</li>
-</ul></li>
+    <li>Public
+        <ul>
+            <li>It is shared among clients of the platform</li>
+        </ul>
+    </li>
+    <li>Private
+        <ul>
+            <li>Meets higher customer requirements to focus more on security</li>
+            <li>More control from the client on the applications</li>
+        </ul>
+    </li>
+    <li>Hybrid
+        <ul>
+            <li>Allows customers a finite number of customizations</li>
+            <li>Cheaper than a private platform, but with several of its advantages</li>
+        </ul>
+    </li>
 </ul>
-<h2 id="advantages">Advantages</h2>
-<ul>
-<li>Cost-effective development</li>
-<li>Scalable</li>
-<li>Fast market for developers</li>
-<li>Easy deployment (deploy) of applications</li>
-<li>Both private or public deployment (deploy) are possible</li>
-</ul>
-<h1 id="disadvantages">Disadvantages</h1>
-<ul>
-<li>Limitation of programming languages ​​(only the languages ​​that the provider grants or permits are acceptable)</li>
-<li>Migration problems (eg “Vendor lock-in”, dependence on a provider)</li>
-</ul>
+<hr />
+<h2 id="pros-cons">Pros &amp; Cons</h2>
+
+{{ table.simple(
+    headers=['Advantages','Disadvantages'],
+    rows=[
+        ['cost-effective development','Limitation of programming languages'],
+        ['scalable','migration problems'],
+        ['Fast market for developers','']
+
+    ]
+) }}
+
+</div>
+<h2 id="examples">Examples</h2>
+<div class="my-5">
+  
+    <section class="grey lighten-2 py-5">
+      
+      <div class="flex-center">
+  
+        <!--First row-->
+        <div class="row">
+  
+          <!--First column-->
+          <div class="col-md-3 flex-center">
+            <img src="https://mdbootstrap.com/img/Photos/Template/34.png" class="img-fluid wow fadeIn" data-wow-delay=".2s">
+          </div>
+          <!--/First column-->
+  
+          <!--Second column-->
+          <div class="col-md-3 flex-center">
+            <img src="https://mdbootstrap.com/img/Photos/Template/35.png" class="img-fluid wow fadeIn" data-wow-delay=".4s">
+          </div>
+          <!--/Second column-->
+  
+          <!--Third column-->
+          <div class="col-md-3 flex-center">
+            <img src="https://mdbootstrap.com/img/Photos/Template/36.png" class="img-fluid wow fadeIn" data-wow-delay=".4s">
+          </div>
+          <!--/Third column-->
+  
+          <!--Fourth column-->
+          <div class="col-md-3 flex-center">
+            <img src="https://mdbootstrap.com/img/Photos/Template/37.png" class="img-fluid wow fadeIn" data-wow-delay=".2s">
+          </div>
+          <!--/Fourth column-->
+  
+        </div>
+        <!--/First row-->
+  
+      </div>
+      
+    </section>
+  
+  </div>
