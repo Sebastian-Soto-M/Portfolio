@@ -3,180 +3,244 @@
     "name": "Java",
     "experience": 4,
     "icon": "fab fa-java",
-    "color": "danger"
+    "color": "danger",
+    "type": "lang"
   },
   "javafx": {
     "name": "JavaFX",
     "experience": 4,
     "icon": "fab fa-java",
-    "color": "danger"
+    "color": "danger",
+    "type:": "framework"
+  },
+  "hibernate": {
+    "name": "Hibernate",
+    "experience": 4,
+    "icon": "",
+    "color": "",
+    "type:": "data"
+  },
+  "jpa": {
+    "name": "JPA",
+    "experience": 4,
+    "icon": "fab fa-java",
+    "color": "",
+    "type": "data"
+  },
+  "maven": {
+    "name": "Maven",
+    "experience": 4,
+    "icon": "",
+    "color": "",
+    "type": "tool"
+  },
+  "gradle": {
+    "name": "Gradle",
+    "experience": 4,
+    "icon": "fab fa-java",
+    "color": "",
+    "type": "tool"
   },
   "android": {
     "name": "Android",
     "experience": 3,
     "icon": "fab fa-android",
-    "color": "success"
+    "color": "success",
+    "type": "platform"
   },
   "python": {
     "name": "Python",
     "experience": 3,
     "icon": "fab fa-python",
-    "color": "warning"
+    "color": "warning",
+    "type": "lang"
   },
   "flask": {
     "name": "Flask",
     "experience": 4,
     "icon": "fas fa-flask",
-    "color": "info"
+    "color": "info",
+    "type": "framework"
   },
   "html": {
     "name": "Html",
     "experience": 5,
     "icon": "fab fa-html5",
-    "color": "danger"
+    "color": "danger",
+    "type": "lang"
   },
   "css": {
     "name": "Css",
     "experience": 4,
     "icon": "fab fa-css3-alt",
-    "color": "info"
+    "color": "info",
+    "type": "lang"
   },
   "sass": {
     "name": "Sass",
     "experience": 4,
     "icon": "fab fa-sass",
-    "color": "secondary"
+    "color": "secondary",
+    "type": "lang"
   },
   "bootstrap": {
     "name": "Bootstrap 4",
     "experience": 4,
     "icon": "fab fa-bootstrap",
-    "color": "primary"
+    "color": "primary",
+    "type": "framework"
   },
   "js": {
     "name": "JavaScript",
     "experience": 4,
     "icon": "fab fa-js",
-    "color": "warning"
+    "color": "warning",
+    "type": "lang"
   },
   "jquery": {
     "name": "jQuery",
     "experience": 4,
     "icon": "fas fa-globe",
-    "color": "primary"
+    "color": "lib"
   },
   "node": {
     "name": "Node.js",
     "experience": 3,
     "icon": "fab fa-node",
-    "color": "success"
+    "color": "success",
+    "type": "framework"
+  },
+  "dynamodb": {
+    "name": "Dynamo DB",
+    "experience": 3,
+    "icon": "fas fa-database",
+    "color": "warning",
+    "type": "data"
+  },
+  "mariadb": {
+    "name": "MariaDB",
+    "experience": 4,
+    "icon": "fas fa-database",
+    "color": "warning",
+    "type": "data"
+  },
+  "sqite": {
+    "name": "SQLite",
+    "experience": 4,
+    "icon": "fas fa-database",
+    "color": "warning",
+    "type": "data"
   },
   "transact-sql": {
     "name": "Transact-SQL",
     "experience": 4,
     "icon": "fas fa-database",
-    "color": "warning"
+    "color": "warning",
+    "type": "data"
   },
   "firebase": {
     "name": "Firebase",
     "experience": 3,
     "icon": "fas fa-database",
-    "color": "warning"
-  },
-  "plsql": {
-    "name": "Pl/SQL",
-    "experience": 3,
-    "icon": "fas fa-database",
-    "color": "warning"
+    "color": "warning",
+    "type": "cloud"
   },
   "cpp": {
     "name": "C++",
     "experience": 3,
     "icon": "fas fa-laptop-code",
-    "color": "primary"
+    "color": "primary",
+    "type": "lang"
   },
   "csharp": {
     "name": "C#",
     "experience": 4,
     "icon": "fas fa-laptop-code",
-    "color": "secondary"
+    "color": "secondary",
+    "type": "lang"
   },
   ".net": {
     "name": ".NET",
     "experience": 4,
     "icon": "fab fa-microsoft",
-    "color": "primary"
+    "color": "primary",
+    "type": "framework"
   },
   "azure": {
     "name": "Azure DevOps",
     "experience": 4,
     "icon": "fab fa-microsoft",
-    "color": "primary"
+    "color": "primary",
+    "type": "cloud"
   },
   "razor": {
     "name": "Razor",
     "experience": 4,
     "icon": "fab fa-microsoft",
-    "color": "secondary"
+    "color": "secondary",
+    "type": "templates"
   },
   "md": {
     "name": "Markdown",
     "experience": 4,
     "icon": "fab fa-markdown",
-    "color": "dark"
+    "color": "dark",
+    "type": "tool"
   },
   "git": {
     "name": "Git",
     "experience": 5,
     "icon": "fab fa-git-alt",
-    "color": "danger"
+    "color": "danger",
+    "type": "tool"
   },
   "heroku": {
     "name": "Heroku",
     "experience": 3,
     "icon": "fas fa-server",
-    "color": "secondary"
+    "color": "secondary",
+    "type": "cloud"
   },
   "tomcat": {
     "name": "Tomcat",
     "experience": 2,
     "icon": "",
-    "color": "warning"
+    "color": "warning",
+    "type": "tool"
   },
   "springboot": {
     "name": "Spring Boot",
     "experience": 4,
     "icon": "",
-    "color": "success"
-  },
-  "sts": {
-    "name": "Spring Tool Suite 4",
-    "experience": 4,
-    "icon": "",
-    "color": "success"
+    "color": "success",
+    "type": "framework"
   },
   "vscode": {
     "name": "Visual Studio Code",
     "experience": 4,
     "icon": "",
-    "color": "primary"
+    "color": "primary",
+    "type": "tool"
   },
   "visualstudio": {
     "name": "Visual Studio",
-    "experience": 3,
-    "icon": "",
-    "color": "success"
-  },
-  "nvim": {
-    "name": "NVim",
     "experience": 5,
     "icon": "",
-    "color": "success"
+    "color": "success",
+    "type": "tool"
+  },
+  "nvim": {
+    "name": "Vim",
+    "experience": 5,
+    "icon": "",
+    "color": "success",
+    "type": "tool"
   },
   "bash": {
     "name": "Bash",
-    "experience": 3,
+    "experience": 2,
     "icon": "",
-    "color": "indigo"
+    "color": "indigo",
+    "type": "lang"
   }
 }
