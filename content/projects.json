@@ -1,58 +1,69 @@
 {
-    "java": [
-        {
-            "id": "compmatrix",
-            "title": "Curd Maker",
-            "href": "/crud-maker",
-            "description": "A tool to reduce coding time on a .Net back-end project.",
-            "img": "matrix.jpg",
-            "techs": ["csharp"]
-        },
-        {
-            "id": "bbmath",
-            "title": "Baby Math",
-            "href": "/baby-math",
-            "description": "Android game for kids, created to help them study math in a fun way.",
-            "img": "numbers.jpg",
-            "techs": ["android"]
-        }
-    ],
-    "python": [
-        {
-            "id": "autofm",
-            "title": "Auto FM",
-            "href": "/automatic-file-manager",
-            "description": "This is a console app to organize files, sorting them by type and extension.",
-            "img": "archive.jpg",
-            "techs":[]
-        },
-        {
-            "id": "timetracker",
-            "title": "Time Tracker",
-            "href": "/time-tracker",
-            "description": "This is a console app to collect information about your activities.",
-            "img": "clock.jpg",
-            "techs":[]
-        }
-    ],
-    "csharp": [
-        {
-            "id": "hotelplatform",
-            "title": "Kodus",
-            "href": "/kodus-hotel-platform",
-            "description": "This is an online platform for hotel management",
-            "img": "beach.jpg",
-            "techs":[".net","transact-sql","razor","js","html","css","sass","bootstrap","jquery"]
-        }
-    ],
-    "js": [
-        {
-            "id": "universityplatform",
-            "title": "Virtual Assistant",
-            "href": "/virtual-assistant",
-            "description": "This is an online platform to help universities organize their courses, students, employees and much more.",
-            "img": "books.jpg",
-            "techs":["node","html","css","jquery"]
-        }
-    ]
+  "java": [
+    {
+      "id": "compmatrix",
+      "title": "Curd Maker",
+      "href": "/crud-maker",
+      "description": "A tool to reduce coding time on a .Net back-end project.",
+      "img": "matrix.jpg",
+      "techs": ["csharp"]
+    },
+    {
+      "id": "bbmath",
+      "title": "Baby Math",
+      "href": "/baby-math",
+      "description": "Android game for kids, created to help them study math in a fun way.",
+      "img": "numbers.jpg",
+      "techs": ["android"]
+    }
+  ],
+  "python": [
+    {
+      "id": "autofm",
+      "title": "Auto FM",
+      "href": "/automatic-file-manager",
+      "description": "This is a console app to organize files, sorting them by type and extension.",
+      "img": "archive.jpg",
+      "techs": []
+    },
+    {
+      "id": "timetracker",
+      "title": "Time Tracker",
+      "href": "/time-tracker",
+      "description": "This is a console app to collect information about your activities.",
+      "img": "clock.jpg",
+      "techs": []
+    }
+  ],
+  "csharp": [
+    {
+      "id": "hotelplatform",
+      "title": "Kodus",
+      "href": "/kodus-hotel-platform",
+      "description": "This is an online platform for hotel management",
+      "img": "beach.jpg",
+      "techs": [
+        ".net",
+        "transact-sql",
+        "razor",
+        "js",
+        "html",
+        "css",
+        "sass",
+        "bootstrap",
+        "jquery"
+      ]
+    }
+  ],
+  "js": [
+    {
+      "id": "universityplatform",
+      "title": "Virtual Assistant",
+      "href": "/virtual-assistant",
+      "description": "This is an online platform to help universities organize their courses, students, employees and much more.",
+      "img": "books.jpg",
+      "techs": ["node", "html", "css", "jquery"]
+    }
+  ]
 }
+

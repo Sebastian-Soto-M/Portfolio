@@ -6,6 +6,13 @@
     "color": "danger",
     "type": "lang"
   },
+  "springboot": {
+    "name": "Spring Boot",
+    "experience": 4,
+    "icon": "fas fa-leaf",
+    "color": "success",
+    "type": "framework"
+  },
   "javafx": {
     "name": "JavaFX",
     "experience": 4,
@@ -13,32 +20,39 @@
     "color": "danger",
     "type:": "framework"
   },
+  "tomcat": {
+    "name": "Tomcat",
+    "experience": 2,
+    "icon": "fas fa-cat",
+    "color": "warning",
+    "type": "tool"
+  },
   "hibernate": {
     "name": "Hibernate",
     "experience": 4,
-    "icon": "",
-    "color": "",
+    "icon": "fab fa-java",
+    "color": "warning",
     "type:": "data"
+  },
+  "maven": {
+    "name": "Maven",
+    "experience": 4,
+    "icon": "fas fa-box",
+    "color": "success",
+    "type": "tool"
   },
   "jpa": {
     "name": "JPA",
     "experience": 4,
     "icon": "fab fa-java",
-    "color": "",
+    "color": "danger",
     "type": "data"
-  },
-  "maven": {
-    "name": "Maven",
-    "experience": 4,
-    "icon": "",
-    "color": "",
-    "type": "tool"
   },
   "gradle": {
     "name": "Gradle",
     "experience": 4,
-    "icon": "fab fa-java",
-    "color": "",
+    "icon": "fas fa-box",
+    "color": "primary",
     "type": "tool"
   },
   "android": {
@@ -101,7 +115,8 @@
     "name": "jQuery",
     "experience": 4,
     "icon": "fas fa-globe",
-    "color": "lib"
+    "color": "primary",
+    "type": "lang"
   },
   "node": {
     "name": "Node.js",
@@ -159,6 +174,20 @@
     "color": "secondary",
     "type": "lang"
   },
+  "vscode": {
+    "name": "Visual Studio Code",
+    "experience": 4,
+    "icon": "fas fa-terminal",
+    "color": "primary",
+    "type": "tool"
+  },
+  "visualstudio": {
+    "name": "Visual Studio",
+    "experience": 5,
+    "icon": "fas fa-terminal",
+    "color": "success",
+    "type": "tool"
+  },
   ".net": {
     "name": ".NET",
     "experience": 4,
@@ -201,45 +230,17 @@
     "color": "secondary",
     "type": "cloud"
   },
-  "tomcat": {
-    "name": "Tomcat",
-    "experience": 2,
-    "icon": "",
-    "color": "warning",
-    "type": "tool"
-  },
-  "springboot": {
-    "name": "Spring Boot",
-    "experience": 4,
-    "icon": "",
-    "color": "success",
-    "type": "framework"
-  },
-  "vscode": {
-    "name": "Visual Studio Code",
-    "experience": 4,
-    "icon": "",
-    "color": "primary",
-    "type": "tool"
-  },
-  "visualstudio": {
-    "name": "Visual Studio",
-    "experience": 5,
-    "icon": "",
-    "color": "success",
-    "type": "tool"
-  },
-  "nvim": {
+  "vim": {
     "name": "Vim",
     "experience": 5,
-    "icon": "",
+    "icon": "fas fa-terminal",
     "color": "success",
     "type": "tool"
   },
   "bash": {
     "name": "Bash",
     "experience": 2,
-    "icon": "",
+    "icon": "fas fa-terminal",
     "color": "indigo",
     "type": "lang"
   }
