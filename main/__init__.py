@@ -12,12 +12,6 @@ template_dir = os.path.join('.', 'templates')
 loader = jinja2.FileSystemLoader(template_dir)
 environment = jinja2.Environment(loader=loader)
 
-with app.app_context():
-    from main.routes import r_blog, r_index, r_projects
-    app.register_blueprint(r_blog)
-    app.register_blueprint(r_index)
-    app.register_blueprint(r_projects)
-
 
 @app.context_processor
 def inject_dict_for_all_templates():
@@ -37,21 +31,14 @@ def inject_personal_info():
                                                  'info.json')))
 
 
-@app.route('/about')
-def about():
-    return render_template('views/about/about.html', dir_title='About')
-
-
-@app.route('/education')
-def education():
-    return render_template('views/education/education.html', dir_title='Education')
-
-
-@app.route('/contact')
-def contact():
-    return render_template('views/contact/contact.html', dir_title='Contact')
-
-
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('views/404.html', dir_title='Not Found'), 404
+
+
+with app.app_context():
+    from main.routes import r_blog, r_index, r_projects, r_base
+    app.register_blueprint(r_blog)
+    app.register_blueprint(r_projects)
+    app.register_blueprint(r_index)
+    app.register_blueprint(r_base)

@@ -11,6 +11,9 @@ r_blog = Blueprint('r_blog', __name__, template_folder='templates',
 r_index = Blueprint('r_index', __name__,
                     template_folder='templates', static_folder='static')
 
+r_base = Blueprint('r_base', __name__, template_folder='templates',
+                   static_folder='static')
+
 r_projects = Blueprint('r_projects', __name__, template_folder='templates',
                        static_folder='static', url_prefix='/projects')
 
@@ -63,3 +66,18 @@ def projects():
 @r_projects.route('/<string:id>')
 def project_definition(id):
     return render_template('views/build.html')
+
+
+@r_base.route('/about')
+def about():
+    return render_template('views/about/about.html', dir_title='About')
+
+
+@r_base.route('/education')
+def education():
+    return render_template('views/education/education.html', dir_title='Education')
+
+
+@r_base.route('/contact')
+def contact():
+    return render_template('views/contact/contact.html', dir_title='Contact')
