@@ -1,25 +1,23 @@
 {% import 'components/table.html' as table %}
 
 <p>Software as a service (SaaS) is a software distribution model in which a third-party provider hosts applications and
-    makes them available to customers over the Internet. SaaS is one of three main categories of cloud computing,
-    alongside infrastructure as a service (IaaS) and platform as a service (PaaS).</p>
+makes them available to customers over the Internet. SaaS is one of three main categories of cloud computing,
+alongside infrastructure as a service (IaaS) and platform as a service (PaaS).</p>
 <p>There are SaaS applications for fundamental business technologies, such as email, sales management, customer
-    relationship management (CRM), financial management, human resource management (HRM), billing and collaboration.
-    Leading SaaS providers include Salesforce, Oracle, SAP, Intuit and Microsoft.</p>
-<hr />
+relationship management (CRM), financial management, human resource management (HRM), billing and collaboration.
+Leading SaaS providers include Salesforce, Oracle, SAP, Intuit and Microsoft.</p>
 <h2 id="pros-cons">Pros &amp; Cons</h2>
 
 {{ table.simple(
-    headers=['advantages','disadvantages'],
-    rows=[
-        ['Flexible payments','businesses relies on outside vendors'],
-        ['scalability','potential service disruptions'],
-        ['automatic updates','unwanted changes may be added'],
-        ['accessibility and persistence',''],
-    ]
+headers=['advantages','disadvantages'],
+rows=[
+['Flexible payments','businesses relies on outside vendors'],
+['scalability','potential service disruptions'],
+['automatic updates','unwanted changes may be added'],
+['accessibility and persistence','An update may cause the system to crash'],
+]
 ) }}
 
-<hr />
 <h2 id="examples">Examples</h2>
 <section class="pt-3">
     <div class="flex-center">
@@ -35,7 +33,7 @@
             </div>
             <div class="col-md-3 flex-center">
                 <img src="{{ url_for('static', filename='img/logos/dropbox_logo.svg') }}"
-                    class="img-fluid logo">
+                     class="img-fluid logo">
             </div>
         </div>
     </div>

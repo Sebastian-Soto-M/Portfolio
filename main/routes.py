@@ -15,10 +15,15 @@ def blog():
 
 @r_blog.route('/<string:article>')
 def blog_saas(article):
-    art_dict = utils.get_article_by_id(article)
+    art = utils.get_article_by_id(article)
     article_path = os.path.join('views', 'blog', 'article')
     try:
-        return render_template(os.path.join(article_path, 'base.html'),
-                               blog=utils.get_article_by_id(article), dir_title=art_dict['title'])
-    except Exception as e:
+        if art != None:
+            if os.stat(os.path.join('main', 'templates', 'views', 'blog', 'article', 'html', article + '.html')) == 0:
+                raise FileNotFoundError
+            return render_template(os.path.join(article_path, 'base.html'),
+                                   blog=art, dir_title=art['title'])
+        else:
+            return render_template('views/404.html', dir_title='Not Found'), 404
+    except FileNotFoundError as e:
         return render_template('views/build.html')

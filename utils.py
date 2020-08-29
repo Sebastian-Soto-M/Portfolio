@@ -12,6 +12,7 @@ def get_article_by_id(id: str):
     for a in articles_json:
         if a['href'] == id:
             return a
+    return None
 
 
 def get_full_project_info():
