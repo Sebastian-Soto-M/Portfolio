@@ -10,7 +10,7 @@
     },
     {
       "id": "compmatrix",
-      "title": "Curd Maker",
+      "title": "Crud Maker",
       "href": "/crud-maker",
       "description": "A tool to reduce coding time on a .Net back-end project.",
       "img": "matrix.jpg",
