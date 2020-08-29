@@ -1,4 +1,5 @@
-from flask import Blueprint, render_template, request, url_for
+from flask import Blueprint, render_template, request, url_for, send_file
+import random
 
 import os
 import utils
@@ -27,3 +28,23 @@ def blog_saas(article):
             return render_template('views/404.html', dir_title='Not Found'), 404
     except FileNotFoundError as e:
         return render_template('views/build.html')
+
+
+r_index = Blueprint('r_index', __name__,
+                    template_folder='templates', static_folder='static')
+
+
+@r_index.route('/')
+def index():
+    techs_json = utils.readJson(os.path.join('content', 'technologies.json'))
+    projects_json = utils.get_full_project_info()
+    rand_list = random.sample(projects_json, k=3)
+    return render_template('views/index/index.html',
+                           technologies=techs_json,
+                           projects=rand_list,
+                           index=True)
+
+
+@r_index.route('/download/resume')
+def download_resume():
+    return send_file(os.path.join('..', 'content', 'SebastianSoto_cv.pdf'))

@@ -1,9 +1,8 @@
 import os
 import utils
 import jinja2
-import random
 from operator import itemgetter
-from flask import Flask, render_template, send_file
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -12,8 +11,9 @@ loader = jinja2.FileSystemLoader(template_dir)
 environment = jinja2.Environment(loader=loader)
 
 with app.app_context():
-    from main.routes import r_blog
+    from main.routes import r_blog, r_index
     app.register_blueprint(r_blog)
+    app.register_blueprint(r_index)
 
 
 @app.context_processor
@@ -32,22 +32,6 @@ def inject_color_palette():
 def inject_personal_info():
     return dict(info=utils.readJson(os.path.join('content',
                                                  'info.json')))
-
-
-@app.route('/')
-def index():
-    techs_json = utils.readJson(os.path.join('content', 'technologies.json'))
-    projects_json = utils.get_full_project_info()
-    rand_list = random.sample(projects_json, k=3)
-    return render_template('views/index/index.html',
-                           technologies=techs_json,
-                           projects=rand_list,
-                           index=True)
-
-
-@app.route('/download/resume')
-def download_resume():
-    return send_file(os.path.join('content', 'SebastianSoto_cv.pdf'))
 
 
 @app.route('/projects')
