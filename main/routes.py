@@ -1,11 +1,18 @@
-from flask import Blueprint, render_template, request, url_for, send_file
+import os
 import random
 
-import os
+from flask import Blueprint, render_template, request, send_file, url_for
+
 import utils
 
 r_blog = Blueprint('r_blog', __name__, template_folder='templates',
                    static_folder='static', url_prefix='/blog')
+
+r_index = Blueprint('r_index', __name__,
+                    template_folder='templates', static_folder='static')
+
+r_projects = Blueprint('r_projects', __name__, template_folder='templates',
+                       static_folder='static', url_prefix='/projects')
 
 
 @r_blog.route('/')
@@ -30,10 +37,6 @@ def blog_saas(article):
         return render_template('views/build.html')
 
 
-r_index = Blueprint('r_index', __name__,
-                    template_folder='templates', static_folder='static')
-
-
 @r_index.route('/')
 def index():
     techs_json = utils.readJson(os.path.join('content', 'technologies.json'))
@@ -48,3 +51,15 @@ def index():
 @r_index.route('/download/resume')
 def download_resume():
     return send_file(os.path.join('..', 'content', 'SebastianSoto_cv.pdf'))
+
+
+@r_projects.route('/')
+def projects():
+    projects_json = utils.get_full_project_info()
+    return render_template('views/projects/projects.html',
+                           projects=projects_json, dir_title='Projects')
+
+
+@r_projects.route('/<string:id>')
+def project_definition(id):
+    return render_template('views/build.html')

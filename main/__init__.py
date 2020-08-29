@@ -1,8 +1,10 @@
 import os
-import utils
-import jinja2
 from operator import itemgetter
+
+import jinja2
 from flask import Flask, render_template
+
+import utils
 
 app = Flask(__name__)
 
@@ -11,9 +13,10 @@ loader = jinja2.FileSystemLoader(template_dir)
 environment = jinja2.Environment(loader=loader)
 
 with app.app_context():
-    from main.routes import r_blog, r_index
+    from main.routes import r_blog, r_index, r_projects
     app.register_blueprint(r_blog)
     app.register_blueprint(r_index)
+    app.register_blueprint(r_projects)
 
 
 @app.context_processor
@@ -32,18 +35,6 @@ def inject_color_palette():
 def inject_personal_info():
     return dict(info=utils.readJson(os.path.join('content',
                                                  'info.json')))
-
-
-@app.route('/projects')
-def projects():
-    projects_json = utils.get_full_project_info()
-    return render_template('views/projects/projects.html',
-                           projects=projects_json, dir_title='Projects')
-
-
-@app.route('/projects/<string:id>')
-def project_definition(id):
-    return render_template('views/build.html')
 
 
 @app.route('/about')
