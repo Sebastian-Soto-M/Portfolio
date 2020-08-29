@@ -1,6 +1,14 @@
 {
   "java": [
     {
+      "id": "shopped-api",
+      "title": "Shopped API",
+      "href": "/shopped-api",
+      "description": "The REST API for the shopped application",
+      "img": "fruit_box.jpg",
+      "techs": ["springboot", "hibernate", "maven", "dynamodb"]
+    },
+    {
       "id": "compmatrix",
       "title": "Curd Maker",
       "href": "/crud-maker",
@@ -18,6 +26,14 @@
     }
   ],
   "python": [
+    {
+      "id": "shopped-app",
+      "title": "Shopped APP",
+      "href": "/shopped-app",
+      "description": "Shopped front-end",
+      "img": "vegetables.jpg",
+      "techs": ["flask", "jinja"]
+    },
     {
       "id": "autofm",
       "title": "Auto FM",
@@ -66,4 +82,3 @@
     }
   ]
 }
-

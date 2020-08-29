@@ -13,9 +13,16 @@
     "color": "success",
     "type": "framework"
   },
+  "thymeleaf": {
+    "name": "Thymeleaf",
+    "experience": 2,
+    "icon": "fas fa-leaf",
+    "color": "success",
+    "type": "framework"
+  },
   "javafx": {
     "name": "JavaFX",
-    "experience": 4,
+    "experience": 3,
     "icon": "fab fa-java",
     "color": "danger",
     "type:": "framework"
@@ -75,6 +82,13 @@
     "icon": "fas fa-flask",
     "color": "info",
     "type": "framework"
+  },
+  "jinja": {
+    "name": "Jinja2",
+    "experience": 4,
+    "icon": "fas fa-file-alt",
+    "color": "info",
+    "type": "templates"
   },
   "html": {
     "name": "Html",
