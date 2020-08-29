@@ -11,6 +11,10 @@ template_dir = os.path.join('.', 'templates')
 loader = jinja2.FileSystemLoader(template_dir)
 environment = jinja2.Environment(loader=loader)
 
+with app.app_context():
+    from main.routes import r_blog
+    app.register_blueprint(r_blog)
+
 
 @app.context_processor
 def inject_dict_for_all_templates():
@@ -58,26 +62,6 @@ def project_definition(id):
     return render_template('views/build.html')
 
 
-@app.route('/blog')
-def blog():
-    articles_json = utils.readJson(os.path.join('content', 'articles.json'))
-    return render_template('views/blog/blog.html', articles=articles_json, dir_title='Blog')
-
-
-@app.route('/blog/<string:article>')
-def blog_saas(article):
-    art_dict = utils.get_article_by_id(article)
-    article_path = os.path.join('views', 'blog', 'article')
-    # try:
-    if os.stat(os.path.join('templates', article_path, 'html', article+'.html')).st_size == 0:
-        return render_template('views/build.html')
-    else:
-        return render_template(os.path.join(article_path, 'base.html'),
-                               blog=utils.get_article_by_id(article), dir_title=art_dict['title'])
-    # except Exception as e:
-    #     return page_not_found(e)
-
-
 @app.route('/about')
 def about():
     return render_template('views/about/about.html', dir_title='About')
@@ -96,7 +80,3 @@ def contact():
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('views/404.html', dir_title='Not Found'), 404
-
-
-if __name__ == '__main__':
-    app.run(debug=True, port=5000)
